@@ -1,0 +1,477 @@
+/* Code for everything */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Use the Inter font for the body */
+  margin: 0; 
+}
+
+/* Navigation Bar */
+nav {
+  background: #4169e1;
+  height: 80px;
+  width: 100%;
+  font-weight: bold;
+  position: sticky; 
+  top: 0; 
+  z-index: 2; 
+}
+
+/* logo - Website Name */
+label.logo {
+  color: white;
+  font-size: 35px;
+  padding: 0px 100px;  
+  line-height: 80px; 
+  font-weight: bold;
+}
+
+/* external links styles */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+/* Active Webpage and Hovering Styles */
+a.online,
+nav ul li a:hover {
+  background: white;
+  color: #4169e1;
+  transition: 1s;
+}
+
+/** dropdown **/
+
+.dropbtn {
+  background-color: #4169e1;
+  color: #fff;
+  padding: 7px 13px;
+  font-size: 17px;
+  font-weight: bold; 
+  text-transform: uppercase;
+  border-radius: 10px; 
+  border: none; 
+  cursor: pointer;
+}
+
+.dropbtn:hover { 
+    transition: 0.5s; 
+    background: #fff; 
+    color: #4169e1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px; 
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid #000; /* Add border style */
+  text-align: center;
+  left: 50%; /* Set left to 50% to center horizontally */
+  transform: translateX(-50%); /* Move the dropdown content back by half of its own width */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #4169e1; 
+  transition: 0.5s; 
+  color: #fff; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+ /** SEARCH BAR STYLES **/
+
+.suggestion-item {
+  padding: 10px;
+  max-width: 250px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/** SEARCH BAR ICON STYLE **/
+
+li .search-bar #search {
+  height: 35px;
+  border: 1px solid #ccc; /* Set the border color to match the background color */
+  width: 200px; 
+  border-radius: 10px;  
+}
+
+li .search-bar button i {
+  background: #4169e1; 
+  color: #fff; 
+  padding: 6px; 
+  font-size: 20px;
+  height: 38px; 
+ }
+
+ li .search-bar button i:hover { 
+  background: #fff; 
+  color: #4169e1;  
+ }
+
+.suggestion-item:hover, .suggestion-item.selected {
+  background-color: #f1f1f1;
+  font-size: 20px; 
+  transition: 0.5s; 
+}
+/** SIZING PLACEMENT EVERYTHING OF SUGGESTIONS **/
+#suggestions-container {
+  position: absolute;
+  top: 100%;
+  width: 235px; 
+  right: 0; /* Set to right instead of left */
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 10px;  
+  font-family: Arial, Helvetica, sans-serif  
+}
+/* Responsive Design Styles */
+/* Hamburger icon Styles */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+ 
+.contact-container {
+  width: 40%; 
+  margin: 50px auto; 
+}
+
+.contact-container h1:first-child { 
+  text-align: center; 
+  margin: 30px; 
+  font-size: 50px; 
+}
+
+.contact-container h2 { 
+  text-align: center; 
+  margin-top: 10px; 
+  margin-bottom: 20px; 
+  font-size: 40px; 
+}
+
+.contact-container p { 
+  margin-bottom: 40px; 
+}
+
+.contact-box {
+  background: white;
+  display: flex; 
+  border-radius: 10px; 
+  justify-content: center;
+}
+
+.contact-left { 
+  flex-basis: 60%; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px; 
+  padding: 40px 60px; 
+}
+
+.contact-right {
+  flex-basis: 40%; 
+  padding: 40px; 
+  background: linear-gradient(to bottom, #405de6, #1da1f2); 
+  color: white; 
+  border-radius: 10px; 
+}
+
+.contact-left:hover,
+.contact-right:hover {
+  transition: 0.5s; 
+  border-radius: 10px; 
+}
+
+.contact-box h1 {
+  margin-bottom: 10px; 
+}
+
+.input-row { 
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 20px; 
+}
+
+.input-row .input-group { 
+  flex-basis: 45%; 
+}
+
+input { 
+  width: 60%; 
+  border: none; 
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 5px; 
+  outline: none; 
+}
+
+textarea { 
+  width: 100%; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; 
+  box-sizing: border-box; 
+}
+
+form label { 
+  color: #4169e1; 
+  font-weight: bold; 
+}
+
+form label:hover {
+  text-decoration: underline;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.form-button button {
+  background: #4169e1;
+  width: 175px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: white;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 90px;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: block; /* Ensures the button is a block-level element */
+  margin: 0 auto; /* Centers the button horizontally */
+}
+
+/* Define the button style when it's being clicked */
+.form-button button:active {
+  background: #1da1f2; 
+  box-shadow:rgba(0, 0, 0, 0.8); 
+}
+
+.form-button button a { 
+  color: #fff; 
+  text-decoration: none;
+}
+
+.form-button button a:hover { 
+  text-decoration: underline;
+}
+
+.contact-left h3 { 
+  color: #4169e1; 
+  font-weight: bold; 
+  margin-bottom: 30px; 
+}
+
+/** Footer **/
+footer {
+  background: #4169e1;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.footer-space {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.footer-space h4 { 
+  font-size: 25px; 
+  margin-bottom: 10px;
+  margin-top: 50px;  
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer-links,
+.footer-rights {
+  list-style: none;
+  padding 0;
+  margin-top: 10px; 
+}
+
+.footer-links li,
+.footer-rights li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-logo p {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-rights {
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  font-size: 110%; /* Increase font size by 10% on hover */
+  transition: 0.3s; /* Add a smooth transition effect */
+}
+
+.footer-section, .footer-space {
+  text-align: center;
+}
+
+.footer-section h4, .footer-space h4, .responsive-footer-section h4 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.rfooter { 
+  display: none;
+}
+@media (max-width: 1129px) { 
+    
+  .contact-container {
+    width: 80%; 
+    margin: 50px auto; 
+  }
+    label.logo {
+      font-size: 30px;
+      padding-right: 30px;
+      padding-left: 10px;
+    }
+  
+    .checkbtn { 
+      display: block;
+    }
+    
+    nav { 
+      width: 100%; 
+    }
+  
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #4169e1;
+      z-index: 2;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.7s; 
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    a:hover, a.active {
+      background: white;
+      color: #4169e1;
+    }
+  
+    #check:checked ~ ul {
+      left: 0; 
+    }
+    
+    .footer-section {
+      flex: 1 0 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-logo img { 
+      display: none;  
+    }
+  
+    .footer-section h4 { 
+      text-align: center; 
+    }
+  
+    .rfooter { 
+      width: 95%;
+      display: grid; 
+    }
+  
+    .wnfooter p { 
+      margin-left: 75px; 
+    }
+  
+    .footer-links a {
+      text-align: center; 
+    }
+  
+    .footer-space { 
+      display: none; 
+    }
+  
+}

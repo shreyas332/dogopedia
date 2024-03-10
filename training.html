@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOGOPEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans&family=Noto+Sans+Kawi:wght@500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oMMotKWithHi/t+s+/h2rZGJT1vYQ6JKcKFYfIUdLlD/bXHqjCZM0J/VVdPWdGqFbNiEtBdZmfFZnYnEUX99nwMs3a2LzBxKMXqfNnZXZLlLZ+WJrHWJWr">
+</head>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOGOPEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans&family=Noto+Sans+Kawi:wght@500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oMMotKWithHi/t+s+/h2rZGJT1vYQ6JKcKFYfIUdLlD/bXHqjCZM0J/VVdPWdGqFbNiEtBdZmfFZnYnEUX99nwMs3a2LzBxKMXqfNnZXZLlLZ+WJrHWJWr">
+  
+</head>
+
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"> <a style="text-decoration: none; color: #fff" href="index.html"> DOGOPEDIA </a> </label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Training</button>
+        <div class="dropdown-content">
+            <a href="training.html"> Commands</a>
+            <a href="hygiene.html">Hygiene </a>
+            <a href="nutrition.html">Nutrition </a>
+            <a href="vet.html">Health </a>
+        </div>
+      </div>
+      </li>
+      <li><a href="feedback.html">Feedback </a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="           Dog-related issues?">
+          <button style="border: none; border-radius: 10px;" id="search-button" type="submit">
+            <i class="fas fa-search"></i>
+        </div>
+      </li>
+    </ul>
+    <div id="suggestions-container"></div>
+  </nav>
+<br> 
+<br> 
+<div id="basic-commands" class="basic-storage">
+    <h1 id="training">  Basic Commands </h1>
+    <div class="content-storage">
+        <div id="sit" class="content-item">
+            <h2> Sit </h2>
+            <br> 
+            <img src="sit.png"> 
+            <br> 
+            <h3> Importance: </h3> <br>
+            <p>  Establishes control and prevents jumping. <br> <br>
+                Useful in various situations, like before meals or crossing roads. </p>
+            </p>
+            <br> 
+            <h3> Training Steps: </h3> 
+            <br> 
+            <p> 
+                Start in a Quiet Environment: Begin in a quiet space to minimize distractions. <br> <br>
+                Use a Treat: Hold a treat close to your dog's nose and raise your hand, prompting them to follow the treat. <br> <br>
+                Move Treat Up: Slowly move the treat up and slightly back, causing your dog's head to tilt up. <br> <br>
+                Naturally, Dog Sits: As your dog follows the treat, their bottom will naturally lower into a sitting position. <br> <br>
+                Reward and Repeat: Immediately praise and reward with the treat. Repeat, gradually phasing out the treat. <br> <br>
+                <span style="font-weight: bold;"> Note: </span> Patience is key. If your dog stands instead of sitting, try again and be patient for them to understand. </p> <br> 
+            </p> 
+        </div>
+        <div id="stay" class="content-item">
+            <h2> Stay </h2>
+            <br> 
+            <img src="stay.jpeg"> 
+            <br> 
+            <h3> Importance: </h3>
+            <br> 
+            <p> Ensures your dog remains in a specific until given permission to move. <br> <br> 
+                Vital for safety, preventing accidents in various situations. </p>
+            <br> 
+            <h3> Training Steps: </h3> <br> 
+            <p> Begin with 'Sit': Start with your dog in a sitting position. <br> <br>
+                Open Hand Signal: Extend your hand, palm out, in front of your dog's face. <br> <br>
+                Use Command 'Stay': Clearly say "Stay" while holding the hand signal.<br> <br>
+                Take a Step Back: Step back slowly, maintaining eye contact with your dog.<br> <br>
+                Reward and Gradual Increase: Reward your dog if they stay. <br> <br> 
+                Gradually increase the distance and duration. <br> <br>
+                <span style="font-weight: bold;"> Note: </span> Reward small successes, avoid overwhelming your dog. <br> <br> </p>
+            
+        </div>
+        <div id="come" class="content-item">
+            <h2> Come (Recall/Follow) </h2>
+            <br>
+            <img src="come.jpg"> 
+            <br> 
+            <h3> Importance: </h3>
+            <p> Useful for calming excited dogs. <br> <br> 
+                Essential for safety in situations where a sit isn't appropriate        
+            </p>
+            <br> 
+            <h3> Training Steps: </h3>
+            <br> 
+            <p> Start Indoors: Begin in a quiet indoor space.<br> <br> 
+                Use a Leash: Attach a leash and crouch down, encouraging your dog to come.<br> <br> 
+                Use the Command 'Come': Clearly say "Come" while gently pulling the leash towards you.<br> <br> 
+                Reward and Affection: Reward with treats and affection when your dog reaches you.<br> <br> 
+                Gradual Off-Leash Practice: Gradually practice in a secure, fenced area before attempting off-leash.<br> <br> 
+                Add Distance Gradually: Increase the distance between you and your dog when practicing the 'Come' command. Ensure consistent rewards for successful responses.<br> <br>
+                <span style="font-weight: bold;"> Note: Patience is crucial, especially during off-leash training. </span>
+            </p>
+             
+        </div>
+        <div id="leave-it" class="content-item">
+            <h2> Down Command  </h2>
+            <br> 
+        <img src="down 2.png"> 
+        <br> 
+        <h3>Importance:</h3><br>
+        <p>Teaching your dog the "Down" command is essential for control and safety, preventing unwanted behaviors and building a foundation for advanced obedience.</p>
+        <br>
+        <h3>Training Steps:</h3><br><br>
+        <p>1. **Starting Position:** Begin with your dog sitting, holding a treat as a reward.<br><br><br>
+            2. **Hold the Treat Low:** Lower the treat to the ground in front of your dog's nose.<br><br><br>
+            3. **Use the Command:** Say "Down" in a clear tone while guiding your dog into a lying position.<br><br><br>
+            4. **Reward and Praise:** Immediately reward with the treat and offer verbal praise when your dog is in the down position.<br><br><br>
+            5. **Repeat and Extend Duration:** Practice, gradually increasing the time your dog stays down before rewarding.<br><br><br>
+            6. **Introduce Distractions:** Train in different environments, introducing distractions to reinforce the behavior in various situations.</p>      
+        </div>
+
+        <div id="door-dashing" class="content-item">
+            <h2> Avoid Door Dashing </h2>
+            <br> 
+            <img src="door dashing.jpeg">
+            <br> 
+            <h3> Importance: </h3> <br> 
+            <p> Prevents your dog from rushing out of the door if it is opened. <br> <br> 
+            This is a crucial command as in many scenarios you may not want your dog to just rush out of the door as they might get injured or harmed when not under your supervision.</p>
+            <br> <br> 
+            <h3> Training Steps: </h3> <br> <br> 
+            <p> 
+            Practice leash manners by using a leash and reinforcing calm behavior.<br> <br>
+            Reward your dog when they remain calm as you open the door.<br> <br>
+            
+            Doorway Protocol: <br> <br>
+            Before opening the door, ask your dog to sit and stay.<br> <br>
+            Only open the door when your dog remains calm and in the sitting position<br> <br>
+         
+            Reward System:
+            Reward your dog with treats and praise for calm behavior.<br> <br>
+            If your dog attempts to dash, calmly close the door and ask for a sit before trying again.<br> <br>
+            
+            <span style="font-weight: bold;"> Consistency: Be consistent in your approach and ensure all family members and visitors follow the same protocol. </span> </p> 
+        </div>
+
+        <div id ="house-training" class="content-item">
+            <h2> House Training </h2>
+            <br> 
+        <img src="house training.webp"> 
+        <br> 
+        <h3> Training Steps: </h3> <br>  
+        <p> 
+            Establish a Routine:<br> <br>
+            Take your dog out regularly, especially after meals, waking up, and before bedtime.<br> <br>
+            Pick a Designated Area:<br> <br>
+            Choose a specific spot outside where you want your dog to eliminate.<br> <br>
+            Take them to this spot consistently.<br> <br>
+            Use a Command:<br> <br>
+            Use a command such as "Go potty" consistently when you want your dog to eliminate.<br> <br>
+            Positive Reinforcement<br> <br>
+            Immediately praise and reward your dog when they pee or poo in the designated area.<br> <br>
+            Scheduled Feeding:<br> <br>
+            Feed your dog on a regular schedule to predict when they might need to go outside.<br> <br>
+        </p>
+        <br> 
+        <br> 
+        <br> 
+        </div>
+    </div>
+</div>
+<div id="walking" class="basic-storage">
+    <h1> Teaching During Walks </h1>
+    <div class="content-storage">
+        <div class="content-item">
+            <h3>Training Steps for Leash Manners:</h3> <br> <br>
+            <p>
+                Teach your dog polite leash manners by reinforcing loose leash walking to discourage pulling. <br> <br>
+                Begin by rewarding your dog for walking calmly beside you, using treats and positive reinforcement. <br> <br>
+                Consistency is key; maintain a steady pace and reward good behavior promptly. <br> <br>
+                This process helps create a positive association between walking on a leash and receiving rewards, encouraging your dog to stay close and focused during walks. <br> <br>
+                Patience and consistent reinforcement will contribute to a well-behaved walking companion<br> <br> <br> 
+            </p>
+        </div>
+        <div class="content-item">
+            <h3>Guidelines for Sniffing Opportunities:</h3> <br> <br>
+            <p>
+                During walks, allow your dog time to explore and sniff, as it's a natural and enriching behavior. 
+                Designate specific potty breaks to accommodate their needs.  <br> <br>
+                Balancing exploration with designated breaks ensures a fulfilling walk for your dog. <br> <br>
+                Understanding your dog's cues for sniffing and bathroom breaks enhances communication and strengthens your bond. <br> <br>
+                Introduce Interactive Play: Bring along a favorite toy or engage in brief play sessions during walks to add excitement and mental stimulation for your dog. <br> <br>
+                These opportunities contribute to their mental stimulation and overall well-being, making walks an enjoyable experience for both you and your furry friend.<br> 
+            </p>
+            
+        </div>
+        <div class="content-item">
+            <h3>Tips and Practices for Consistent Walks:</h3> <br> <br>
+            <p>
+                Teach your dog polite leash manners by reinforcing loose leash walking to discourage pulling. <br> <br>
+                Begin by rewarding your dog for walking calmly beside you, using treats and positive reinforcement. <br> <br>
+                Consistency is key; maintain a steady pace and reward good behavior promptly. <br> <br>
+                Create Positive Associations: Use verbal cues, such as praise, when rewarding your dog during walks. This positive reinforcement creates a strong association between good behavior and positive experiences. <br> <br>
+                This process helps create a positive association between walking on a leash and receiving rewards, encouraging your dog to stay close and focused during walks. <br> 
+            </p>
+        </div>
+    </div>
+</div>
+<div id="trick" class="basic-storage">
+    <h1> Trick Commands </h1>
+    <p> Trick commands are excellent for mental stimulation and can contribute to a well-rounded and happy dog.<br> <br>
+        While teaching tricks, remember to use positive reinforcement, patience, and keep training sessions enjoyable for your dog.<br> <br>
+        Incorporating a mix of both basic commands and trick commands into your training routine can provide a balanced and fulfilling experience for you and your canine companion.<br> <br>
+    </p>
+    <div class="content-storage">
+        <div id="crawl" class="content-item">
+            <h2> Crawl </h2>
+            <br> 
+        <img src="crawl.jpeg"> 
+        <br> 
+        <h3> Importance: </h3> <br> 
+        <p> Teaching your dog to crawl improves their agility, promoting better coordination and body awareness. <br> <br> 
+            The focused training involved in teaching the crawl strengthens the bond between you and your furry friend, fostering trust and communication. </p> <br> 
+        <h3> Training Approach: </h3> <br> 
+        <p> 
+            Start with your dog in a down position. <br> <br>
+            Use a treat to lure them forward while keeping their belly on the ground.<br> <br>
+            (It is much easier to teach your dog this trick if your dog already knows how to roll)<br> <br>
+        </p>
+        </div>
+        <div id="shake-hand" class="content-item">
+            <h2> Shake Hand (Paw) </h2>
+            <br> 
+        <img src="shake hadn.jpeg"> 
+        <br> 
+        <h3> Importance: </h3>
+        <br> 
+        <p> This trick is a social and interactive command that shows your dog's willingness to engage with people. <br> <br> 
+            It's a cute and friendly behavior that can be used in various social situations
+        </p>
+        <br> <br> 
+        <h3> Training Approach </h3> 
+        <br> 
+        <p> Start in a sitting position. <br> <br>
+            Hold out your hand or use a command like "shake" while gently tapping their paw.<br> <br>
+            Reward when they lift their paw, gradually reducing the need for physical contact.<br> <br>
+        </p>
+        </div>
+        <div id="barking" class="content-item">
+            <h2> Bark </h2>
+        <br> 
+        <img src="barking.jpeg"> 
+        <br> 
+        <h3> Importance: </h3> <br> 
+        <p> Teaching your dog to bark on command can be a fun way to showcase their vocal abilities. <br> <br> 
+            It's not a command you would use in everyday situations but can be a playful trick.
+        </p><br>
+        <br>  
+        <h3> Training Approach </h3> <br> 
+        <p> Wait for your dog to naturally bark (e.g., in response to a doorbell). <br> <br>
+            Use a verbal cue like "speak" just before they bark. <br> <br>
+            Reward immediately, reinforcing the association between the command and the behavior.
+        </p>
+        <br> 
+        <br> 
+        </div>
+        <div id="roll-over" class="content-item">
+            <h2> Roll Over </h2>
+            <br> 
+        <img src="roll over.jpeg">
+        <br> 
+        <h3> Importance: </h3> <br> 
+        <p> 
+            This trick is a playful and delightful way to showcase your dog's agility and willingness to engage in more complex behaviors. <br> <br> 
+            It's an entertaining trick that can impress friends and family.
+        </p>
+        <br> <br> 
+        <h3> Training Approach </h3> <br> 
+        <p> Start with your dog in a "down" position.<br> <br>
+            Hold a treat close to their nose and move it in a circular motion, encouraging them to follow.<br> <br>
+            As they follow the treat, gently guide them into a roll-over position.<br> <br>
+            Reward and praise when they complete the roll-over.<br> <br>
+            Gradually phase out the treat and practice the trick with a verbal cue like "roll over."<br> <br>
+        </p>
+        <br> <br> <br> 
+        </div>
+        <div id="spin" class="content-item">
+            <h2> Spin or Turn </h2>
+            <br>
+        <img src="come.jpg"> 
+        <br> 
+        <h3> Importance: </h3> <br> 
+        <p> Teaching your dog to spin or turn is a fun and engaging trick that showcases their agility and responsiveness to cues. <br> <br> 
+            It's a great way to add flair to your dog's repertoire of tricks. 
+        </p> <br> <br> 
+        <h3> Training Approach </h3> <br> 
+        <p> Start with your dog in a standing position.<br> <br>
+            Hold a treat close to their nose and slowly move it in a circular motion away from them.<br> <br>
+            Encourage your dog to follow the treat by turning in the same direction.<br> <br>
+            Reward and praise when they complete the spin.<br> <br>
+            Repeat the process, gradually introducing a verbal cue like "spin" or "turn."<br> <br>
+            <br> <br> 
+        </div>
+        <div id="high-five" class="content-item">
+            <h2> High-Five </h2>
+            <br>
+            <img src="high five.webp">
+            <br>
+            <h3> Importance: </h3>
+            <br>
+            <p> The High-Five trick is a delightful and interactive command that showcases your dog's sociable nature. <br> <br> 
+            </p>
+            <br> 
+            <h3> Training Approach </h3>
+            <br>
+            <p> Start with your dog in a sitting position. <br> <br>
+                Raise your hand and say "High-Five" while encouraging them to touch your palm with their paw. <br> <br>
+                Reward immediately when they make contact, reinforcing the association between the command and the action. <br> <br>
+                Repeat and Practice:  After the initial successful attempt, encourage your dog to repeat the high-five several times. Repeat the command and gesture consistently to reinforce the association.  <br> <br> 
+                Gradual Reduction of Treats: As your dog becomes more proficient in performing the high-five, gradually reduce the frequency of treats.  <br> <br> 
+            </p>
+            <br> 
+        </div>         
+    </div>
+</div>
+<div  id="behaviour" class="basic-storage">
+    <h1> Common Behaviour Issues </h1>
+    <div class="content-storage">
+        <div id="excessive-barking" class="content-item">
+            <h2> Excessive Barking </h2>
+            <br> 
+            <img src="aggressive.webp"> 
+            <br>
+            <p>
+            Identify Triggers: Pay attention to what makes your dog bark a lot. Is it strangers, other animals, or certain sounds? <br> <br>
+            Teach "Quiet": When your dog is quiet, say "quiet" and give them a treat. This helps them associate the word with calm behavior. <br> <br>
+            Desensitize to Triggers: Gradually expose your dog to the things that make them bark. Reward them for staying calm.<br> <br>
+        </p>   
+        <br> 
+        </div>
+        <div id="jumping" class="content-item">
+            <h2> Jumping </h2>
+            <br> 
+            <img src="jumping.jpeg"> 
+            <br>
+            <p> Ignore and Reward: When your dog jumps, turn away and ignore them. Reward and give attention only when they have all paws on the ground.<br> <br>
+                Teach "Off": Use the command "off" when your dog jumps. Reward them when they listen and stop jumping.<br> <br>
+                Practice Greetings: Practice meeting people calmly. Reward your dog when they greet without jumping.<br> <br>
+            </p>
+        </div>
+        <div id="chewing" class="content-item">
+            <h2> Destructive Chewing </h2>
+            <br> 
+            <img src="chewing.webp"> 
+            <br>
+            <p> Provide Appropriate Chew Toys: Give your dog toys that are okay to chew on. Praise and reward them when they chew on these toys.<br> <br>
+                Supervise and Correct: Keep an eye on your dog. If you catch them chewing on something they shouldn't, gently redirect them to their toys.<br> <br>
+                Use Bitter Sprays: Use a spray dogs don't like on furniture. It helps discourage them from chewing on things they shouldn't.<br> <br>
+            </p>
+        </div>
+        <div id="leash-pulling" class="content-item">
+            <h2> Leash Pulling </h2>
+            <br> 
+            <img src="leash pulling.jpeg"> 
+            <br>
+            <p> Teach Loose-Leash Walking: Reward your dog with treats when the leash is loose. Stop walking if they pull and start again when they calm down. <br> <br>
+                Change Direction: Randomly change your walking direction. This helps keep your dog focused on you.<br> <br>
+                Use No-Pull Harnesses: Consider using a harness that discourages pulling. It makes walks more comfortable for both you and your dog.<br> <br>
+                Practice "Let's Go" Cue: Introduce a verbal cue such as "Let's Go" or any phrase you prefer. Use this cue when your dog starts to pull, and immediately change direction <br> <br> 
+                Engage in Short Training Sessions: Keep training sessions short and positive. Aim for frequent, short walks with opportunities for loose-leash walking practice. <br> <br> 
+            </p>
+        </div>
+        <div id="anxiety" class="content-item">
+            <h2> Separation Anxiety </h2>
+            <br> 
+            <img src="anxiety.jpeg"> 
+            <br>
+            <p> Gradual Desensitization: Practice leaving your dog for short periods, then gradually increase the time. Reward them when you return.<br> <br>
+                Create a Safe Space: Make a cozy space for your dog with their bed and toys. It helps them feel secure when you're not around.<br> <br>
+                Reward Calm Behavior: When leaving or coming home, wait for your dog to be calm. Reward them when they're not overly excited.<br> <br>
+                Positive Reinforcement: Use treats, praise, or play to show your dog they did something good.<br> <br>
+                Patience and Persistence: Changing behavior takes time. Keep at it, and be patient with your dog.<br> <br></p>
+        <br> <br> 
+        <br> 
+        </div>
+        <div id="aggressive" class="content-item">
+            <h2> Aggressive Behaviour </h2>
+            <br> 
+            <img src="angrry dog.jpeg"> 
+            <br> 
+            <p> 
+                Identify Triggers: Observe and recognize situations that trigger aggression. <br> <br> 
+                Consult Professionals: Seek guidance from a dog trainer or behaviorist for personalized advice <br> <br> 
+                Positive Reinforcement: Reward non-aggressive behavior with treats and praise. <br> <br> 
+                Desensitization: Gradually expose the dog to triggers in a controlled, positive manner. <br> <br> 
+                Avoid Punishment: Refrain from using punishment, as it can worsen aggression. <br> <br> 
+                Obedience Training: Enroll in training classes for basic commands and behavior control. <br> <br> 
+            </p>                
+        </div>
+    </div>
+</div>
+
+<div class="basict-container">
+    <h1 id="basic-commands"> Basic Commands </h1>
+    <div class="content-container">
+        <h2 id="sit"> Sit Command </h2>
+        <br> 
+        <img style="height: 275px;" src="sit.png" alt="Image Description" class="content-image">
+        <br> 
+        <h3> Importance: </h3> <br>
+        <p>  Establishes control and prevents jumping. <br> <br>
+            Useful in various situations, like before meals or crossing roads. </p>
+        </p>
+        <br> 
+        <h3> Training Steps: </h3> 
+        <br> 
+        <p> 
+            Start in a Quiet Environment: Begin in a quiet space to minimize distractions. <br> <br>
+            Use a Treat: Hold a treat close to your dog's nose and raise your hand, prompting them to follow the treat. <br> <br>
+            Move Treat Up: Slowly move the treat up and slightly back, causing your dog's head to tilt up. <br> <br>
+            Naturally, Dog Sits: As your dog follows the treat, their bottom will naturally lower into a sitting position. <br> <br>
+            Reward and Repeat: Immediately praise and reward with the treat. Repeat, gradually phasing out the treat. <br> <br>
+            <span style="font-weight: bold;"> Note: Patience is key. If your dog stands instead of sitting, try again and be patient for them to understand. </p> <br> <br> </span> 
+        </p> 
+   </div>
+   <div class="content-container">
+    <h2 id="stay"> Stay Command </h2> 
+    <br> 
+    <img src="stay.jpeg"> 
+    <br> 
+    <h3> Importance: </h3>
+    <br> 
+    <p> Ensures your dog remains in a specific until given permission to move. <br> <br> 
+        Vital for safety, preventing accidents in various situations. </p>
+    <br> 
+    <h3> Training Steps: </h3>
+    <p> Begin with 'Sit': Start with your dog in a sitting position. <br> <br>
+        Open Hand Signal: Extend your hand, palm out, in front of your dog's face. <br> <br>
+        Use Command 'Stay': Clearly say "Stay" while holding the hand signal.<br> <br>
+        Take a Step Back: Step back slowly, maintaining eye contact with your dog.<br> <br>
+        Reward and Gradual Increase: Reward your dog if they stay. Gradually increase the distance and duration. <br> <br>
+        <span style="font-weight: bold;"> Note: Reward small successes, and avoid overwhelming your dog. </span>
+    </p>
+   </div>
+   <div class="content-container">
+    <h2 id="come"> Come (Recall/Follow) Command </h2>
+    <br> 
+    <img src="come.jpg"> 
+    <br> 
+    <h3> Importance: </h3>
+    <p> Useful for calming excited dogs. <br> <br> 
+        Essential for safety in situations where a sit isn't appropriate        
+    </p>
+    <br> 
+    <h3> Training Steps: </h3>
+    <br> 
+    <p> Start Indoors: Begin in a quiet indoor space.<br> <br> 
+        Use a Leash: Attach a leash and crouch down, encouraging your dog to come.<br> <br> 
+        Use the Command 'Come': Clearly say "Come" while gently pulling the leash towards you.<br> <br> 
+        Reward and Affection: Reward with treats and affection when your dog reaches you.<br> <br> 
+        Gradual Off-Leash Practice: Gradually practice in a secure, fenced area before attempting off-leash.<br> <br> 
+        <span style="font-weight: bold;"> Note: Patience is crucial, especially during off-leash training. </span>
+    </p>
+    </div>
+    <div class="content-container">
+        <h2 id="down"> Down Command </h2>
+        <br> 
+        <img src="down 2.png"> 
+        <br> 
+        <h3>Importance:</h3><br>
+        <p>Teaching your dog the "Down" command is essential for control and safety, preventing unwanted behaviors and building a foundation for advanced obedience.</p>
+        <br>
+        <h3>Training Steps:</h3><br><br>
+        <p>1. **Starting Position:** Begin with your dog sitting, holding a treat as a reward.<br><br><br>
+            2. **Hold the Treat Low:** Lower the treat to the ground in front of your dog's nose.<br><br><br>
+            3. **Use the Command:** Say "Down" in a clear tone while guiding your dog into a lying position.<br><br><br>
+            4. **Reward and Praise:** Immediately reward with the treat and offer verbal praise when your dog is in the down position.<br><br><br>
+            5. **Repeat and Extend Duration:** Practice, gradually increasing the time your dog stays down before rewarding.<br><br><br>
+            6. **Introduce Distractions:** Train in different environments, introducing distractions to reinforce the behavior in various situations.</p>             
+    </div>
+    <div class="content-container">
+        <h2 id="door-dashing"> Avoiding Door Dashing </h2>
+        <br> 
+        <img src="door dashing.jpeg">
+        <br> 
+        <h3> Training Steps: </h3>
+        <p> 
+        Practice leash manners by using a leash and reinforcing calm behavior.<br> <br>
+        Reward your dog when they remain calm as you open the door.<br> <br>
+        
+        Doorway Protocol: <br> <br>
+        Before opening the door, ask your dog to sit and stay.<br> <br>
+        Only open the door when your dog remains calm and in the sitting position<br> <br>
+     
+        Reward System:
+        Reward your dog with treats and praise for calm behavior.<br> <br>
+        If your dog attempts to dash, calmly close the door and ask for a sit before trying again.<br> <br>
+        
+        <span style="font-weight: bold;"> Consistency: Be consistent in your approach and ensure all family members and visitors follow the same protocol. </span> </p> 
+    </div>
+    <div class="content-container">
+        <h2 id="house-training"> House Training </h2>
+        <br> 
+        <img src="house training.webp"> 
+        <br> 
+        <h3> Training Steps: </h3>
+        <p> 
+            Establish a Routine:<br> <br>
+            Take your dog out regularly, especially after meals, waking up, and before bedtime.<br> <br>
+            Pick a Designated Area:<br> <br>
+            Choose a specific spot outside where you want your dog to eliminate.<br> <br>
+            Take them to this spot consistently.<br> <br>
+            Use a Command:<br> <br>
+            Use a command such as "Go potty" consistently when you want your dog to eliminate.<br> <br>
+            Positive Reinforcement<br> <br>
+            Immediately praise and reward your dog when they pee or poo in the designated area.<br> <br>
+            Scheduled Feeding:<br> <br>
+            Feed your dog on a regular schedule to predict when they might need to go outside.<br> <br>
+        </p>
+    </div>
+    <br> 
+    <div class="content-container">
+        <h2 id="walking"> Teaching During Walks </h2>
+        <br> 
+        <img src="dog walking.jpeg"> 
+        <br> 
+        <h3> Training Steps and Information: </h3>
+        <p> 
+            Leash Manners: <br> <br>
+            Reinforce loose leash walking to prevent pulling. <br> <br>
+            Reward your dog for walking calmly by your side.<br> <br>
+            <br> <br>
+            Sniffing Opportunities:<br> <br>
+            Allow your dog some time to sniff and explore during the walk.<br> <br>
+        Use designated potty breaks during the walk.<br> <br>
+        <br> <br>
+        Consistent Commands:<br> <br>
+        Use consistent commands for elimination during walks.<br> <br>
+        Reward your dog when they pee or poo in the appropriate spot.<br> <br>
+        <br> <br>
+        Clean-Up Supplies:
+        Always carry clean-up supplies during walks to promptly clean up after your dog.<br> <br>
+        <br> <br> StayPatient: <br> <br>
+        If your dog doesn't eliminate during a walk, be patient and try again later or during the next scheduled break.<br> <br>
+        <br> <br>
+        General Tips:<br> <br>
+        Positive Reinforcement: Use treats, praise, and play as positive reinforcement for desired behavior.<br> <br>
+        Be Patient: Training takes time. Be patient and consistent with your commands and rewards.<br> <br>
+        <br> <br>
+        Prevent Accidents:<br> <br>
+        Supervise your dog indoors to prevent accidents and redirect them to the designated outdoor area.<br> <br>
+    </div>
+    <h1> Trick Commands </h1>
+    <p align="center"> Trick commands are excellent for mental stimulation and can contribute to a well-rounded and happy dog.<br> <br>
+        While teaching tricks, remember to use positive reinforcement, patience, and keep training sessions enjoyable for your dog.<br> <br>
+        Incorporating a mix of both basic commands and trick commands into your training routine can provide a balanced and fulfilling experience for you and your canine companion.<br> <br>
+    <div class="content-container"> 
+        <h2 id="crawl"> Crawl </h2>
+        <br> 
+        <img src="crawl.jpeg"> 
+        <br> 
+        <h3> Training Approach: </h3>
+        <p> 
+            Start with your dog in a down position. <br> <br>
+            Use a treat to lure them forward while keeping their belly on the ground.<br> <br>
+            (It is much easier to teach your dog this trick if your dog already knows how to roll)<br> <br>
+            Reward and repeat, gradually increasing the distance that your dog will cover while crawling<br> <br>
+        </p>
+    </div> 
+    <div class="content-container">
+        <h2 id="shake-hand"> Shake Hand (Paw) </h2>
+        <br> 
+        <img src="shake hadn.jpeg"> 
+        <br> 
+        <h3> Importance: </h3>
+        <br> 
+        <p> This trick is a social and interactive command that shows your dog's willingness to engage with people. <br> <br> 
+            It's a cute and friendly behavior that can be used in various social situations
+        </p>
+        <h3> Training Approach </h3>
+        <br> 
+        <p> Start in a sitting position. <br> <br>
+            Hold out your hand or use a command like "shake" while gently tapping their paw.<br> <br>
+            Reward when they lift their paw, gradually reducing the need for physical contact.<br> <br>
+        </p>
+    </div>  
+    <br> 
+    <div class="content-container">
+        <h2 id="barking"> Bark </h2>
+        <br> 
+        <img src="barking.jpeg"> 
+        <br> 
+        <h3> Importance: </h3>
+        <p> Teaching your dog to bark on command can be a fun way to showcase their vocal abilities. <br> <br> 
+            It's not a command you would use in everyday situations but can be a playful trick.
+        </p>
+        <h3> Training Approach </h3>
+        <p> Wait for your dog to naturally bark (e.g., in response to a doorbell). <br> <br>
+            Use a verbal cue like "speak" just before they bark. <br> <br>
+            Reward immediately, reinforcing the association between the command and the behavior.
+        </p>
+    </div>
+    <br> 
+    <div class="content-container">
+        <h2 id="roll-over"> Roll Over </h2>
+        <br> 
+        <img src="roll over.jpeg">
+        <br> 
+        <h3> Importance: </h3>
+        <p> 
+            This trick is a playful and delightful way to showcase your dog's agility and willingness to engage in more complex behaviors. <br> <br> 
+            It's an entertaining trick that can impress friends and family.
+        </p>
+        <h3> Training Approach </h3>
+        <p> Start with your dog in a "down" position.<br> <br>
+            Hold a treat close to their nose and move it in a circular motion, encouraging them to follow.<br> <br>
+            As they follow the treat, gently guide them into a roll-over position.<br> <br>
+            Reward and praise when they complete the roll-over.<br> <br>
+            Gradually phase out the treat and practice the trick with a verbal cue like "roll over."<br> <br>
+        </p>     
+    </div>
+    <div class="content-container">
+        <h2 id="spin"> Spin or Turn</h2>
+        <br>
+        <img src="come.jpg"> 
+        <br> 
+        <h3> Importance: </h3>
+        <p> Teaching your dog to spin or turn is a fun and engaging trick that showcases their agility and responsiveness to cues. <br> <br> 
+            It's a great way to add flair to your dog's repertoire of tricks. 
+        </p>
+        <h3> Training Approach </h3>
+        <p> Start with your dog in a standing position.<br> <br>
+            Hold a treat close to their nose and slowly move it in a circular motion away from them.<br> <br>
+            Encourage your dog to follow the treat by turning in the same direction.<br> <br>
+            Reward and praise when they complete the spin.<br> <br>
+            Repeat the process, gradually introducing a verbal cue like "spin" or "turn."<br> <br>
+    </div>
+</div>
+
+<div class="basict-container">
+    <h1> Common Behavior Issues </h1>
+    <div class="content-container">
+        <h3 id="excessive-barking"> Excessive Barking </h3>
+        <br> 
+        <img src="aggressive.webp"> 
+        <br> 
+    <p>
+        Identify Triggers: Pay attention to what makes your dog bark a lot. Is it strangers, other animals, or certain sounds? <br> <br>
+        Teach "Quiet": When your dog is quiet, say "quiet" and give them a treat. This helps them associate the word with calm behavior. <br> <br>
+        Desensitize to Triggers: Gradually expose your dog to the things that make them bark. Reward them for staying calm.<br> <br>
+    </p> 
+    </div>
+    <div class="content-container">
+        <h3 id="jumping"> Jumping </h3>
+        <br> 
+        <img src="jumping.jpeg"> 
+        <br> 
+        <p> Ignore and Reward: When your dog jumps, turn away and ignore them. Reward and give attention only when they have all paws on the ground.<br> <br>
+            Teach "Off": Use the command "off" when your dog jumps. Reward them when they listen and stop jumping.<br> <br>
+            Practice Greetings: Practice meeting people calmly. Reward your dog when they greet without jumping.<br> <br>
+        </p>
+    </div>
+    <div class="content-container">
+        <h3 id="chewing"> Destructive Chewing </h3> 
+        <br> 
+            <img src="chewing.webp"> 
+            <br> 
+        <p> Provide Appropriate Chew Toys: Give your dog toys that are okay to chew on. Praise and reward them when they chew on these toys.<br> <br>
+            Supervise and Correct: Keep an eye on your dog. If you catch them chewing on something they shouldn't, gently redirect them to their toys.<br> <br>
+            Use Bitter Sprays: Use a spray dogs don't like on furniture. It helps discourage them from chewing on things they shouldn't.<br> <br>
+        </p>
+    </div>
+    <div class="content-container">
+        <h3 id="leash-pulling"> Leash Pulling </h3>
+        <br> 
+            <img src="leash pulling.jpeg"> 
+            <br>
+        <p> Teach Loose-Leash Walking: Reward your dog with treats when the leash is loose. Stop walking if they pull and start again when they calm down. <br> <br>
+            Change Direction: Randomly change your walking direction. This helps keep your dog focused on you.<br> <br>
+            Use No-Pull Harnesses: Consider using a harness that discourages pulling. It makes walks more comfortable for both you and your dog.<br> <br>
+        </p>            
+    </div>
+    <div class="content-container">
+        <h3 id="anxiety"> Separation Anxiety </h3>
+        <br> 
+            <img src="anxiety.jpeg"> 
+            <br>
+        <p> Gradual Desensitization: Practice leaving your dog for short periods, then gradually increase the time. Reward them when you return.<br> <br>
+            Create a Safe Space: Make a cozy space for your dog with their bed and toys. It helps them feel secure when you're not around.<br> <br>
+            Reward Calm Behavior: When leaving or coming home, wait for your dog to be calm. Reward them when they're not overly excited.<br> <br><br> <br>
+            Consistency is Key: Always use the same commands and rewards so your dog understands what you want.<br> <br>
+            Positive Reinforcement: Use treats, praise, or play to show your dog they did something good.<br> <br>
+            Patience and Persistence: Changing behavior takes time. Keep at it, and be patient with your dog.<br> <br><br> <br>
+            Seek Professional Help: If things don't improve, consider getting advice from a professional dog trainer or behaviorist.<br> <br>
+            Remember, every dog learns at their own pace. Stay positive and celebrate the small victories along the way! 
+    </div>
+    <div class="content-container">
+        <h2> Aggressive Behaviour </h2>
+            <br> 
+            <img src="angrry dog.jpeg"> 
+            <br> 
+            <p> 
+                Identify Triggers: Observe and recognize situations that trigger aggression. <br> <br> 
+                Consult Professionals: Seek guidance from a dog trainer or behaviorist for personalized advice <br> <br> 
+                Positive Reinforcement: Reward non-aggressive behavior with treats and praise. <br> <br> 
+                Desensitization: Gradually expose the dog to triggers in a controlled, positive manner. <br> <br> 
+                Avoid Punishment: Refrain from using punishment, as it can worsen aggression. <br> <br> 
+                Obedience Training: Enroll in training classes for basic commands and behavior control. <br> <br> 
+            </p>    
+    </div>
+</div>
+<footer>
+    <div class="footer-section footer-logo">
+      <img style="width: 250px; height: 250px;" src="Favicon.png" alt="Website Logo"> 
+      <div>
+        <div class="wnfooter"> 
+        <p style="text-align: center; font-weight: bold; font-size: 40px;">DOGOPEDIA</p>
+      </div>
+        <ul class="footer-rights">
+          <li style="font-size: 18px; font-weight: 500;  text-align: center">&copy; 2023  DOGOPEDIA. <br> <br>  All Rights Reserved. </li>
+        </ul>
+        
+      </div>
+    </div>
+  
+    <div class="footer-space">
+      <h4> Training </h4>
+      <ul class="footer-links">
+        <li><a href="#sit"> Basic Commands </a></li>
+        <li><a href="#house-training"> House Training  </a></li>
+        <li><a href="#crawl"> Trick Commands  </a></li>
+        <li><a href="#walking"> Walking </a> </li> 
+      </ul>
+    </div>
+  
+    <div class="footer-space">
+      <h4> Dog Care </h4>
+      <ul class="footer-links"> 
+        <li><a href="training.html"> Dog Training </li>
+        <li><a href="hygiene.html"> Maintaining Hygiene </a></li>
+        <li><a href="nutrition.html"> Nutrition </a> </li>
+        <li><a href="vet.html#vaccination"> Vaccination </li>
+      </ul>
+    </div>
+    <div class="footer-space">
+      <h4 style="color:#fff;">Other </h4>
+      <ul class="footer-links">
+        <li><a href="training.html">Dog Care</a></li>
+        <li><a href="feedback.html">Feedback </a></li>
+        <li><a href="feedback.html">Training</a></li>
+        <li><a href="contact.html"> Contact Us </li>
+      </ul>
+    </div>
+    <!-- Responsive Footer -->
+    <div class="rfooter">
+      <h4 style="color:#fff;"> Training  </h4><br>
+      <div class="footer-links">
+       <a href="#sit"> Basic Commands  </a>  <br><br>
+       <a href="#house-training"> House Training  </a>  <br><br>
+       <a href="#crawl"> Trick Commands  </a>  <br><br>
+       <a href="#walking"> Walking </a> <br> <br> 
+      </div>
+      <br>
+      <h4> Dog Care </h4><br>
+      <div class="footer-links">
+       <a href="training.html"> Dog Training </a> <br><br>
+       <a href="hygiene.html"> Maintaining Hygiene</a><br><br>
+       <a href="nutrition.html"> Nutrition </a> <br>  <br>
+       <a href="vet.html#vaccination"> Vaccination </a> <br> <br>
+      </div>
+      <br>
+      <h4> Other </h4> <br>
+      <div class="footer-links">
+       <a href="hygiene.html"> Dog Care</a>  <br><br>
+       <a href="feedback.html"> Feedback </a>  <br><br>
+       <a href="training.html"> Training </a>  <br><br>
+       <a href="contact.html"> Contact Us </a>  <br><br>
+    </div>
+  </footer>
+  

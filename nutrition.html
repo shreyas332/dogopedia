@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOGOPEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans&family=Noto+Sans+Kawi:wght@500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oMMotKWithHi/t+s+/h2rZGJT1vYQ6JKcKFYfIUdLlD/bXHqjCZM0J/VVdPWdGqFbNiEtBdZmfFZnYnEUX99nwMs3a2LzBxKMXqfNnZXZLlLZ+WJrHWJWr">
+</head>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOGOPEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans&family=Noto+Sans+Kawi:wght@500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oMMotKWithHi/t+s+/h2rZGJT1vYQ6JKcKFYfIUdLlD/bXHqjCZM0J/VVdPWdGqFbNiEtBdZmfFZnYnEUX99nwMs3a2LzBxKMXqfNnZXZLlLZ+WJrHWJWr">
+  
+</head>
+
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"> <a style="text-decoration: none; color: #fff" href="index.html"> DOGOPEDIA </a> </label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Training</button>
+        <div class="dropdown-content">
+            <a href="training.html"> Commands</a>
+            <a href="hygiene.html">Hygiene </a>
+            <a href="nutrition.html">Nutrition </a>
+            <a href="vet.html">Health </a>
+        </div>
+      </div>
+      </li>
+      <li><a href="feedback.html">Feedback </a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="           Dog-related issues?">
+          <button style="border: none; border-radius: 10px;" id="search-button" type="submit">
+            <i class="fas fa-search"></i>
+        </div>
+      </li>
+    </ul>
+    <div id="suggestions-container"></div>
+  </nav>
+<br> 
+<br> 
+<div class="basic-storage">
+    <h1 id="nutrition"> Nutrition </h1>
+    <p> Importance: A balanced diet is crucial for a dog's overall health and well-being. <br> <br>
+        It ensures they receive the necessary nutrients to support their growth, energy levels, and immune system. <br> <br>
+        A well-fed dog is more likely to have a shiny coat, maintain a healthy weight, and experience fewer health issues.<br> <br>
+    </p>
+    <div class="content-storage">
+        <div  id="food" class="content-item">
+            <h2> Home Food Vs. Commercial Dog-Food </h2>
+            <p style="font-weight: bold; font-size: 20px; margin-top: 20px; margin-bottom: 10px;"> Home-Food </p>
+            <p> Pros: <br> <br>
+                Allows for customization based on the dog's preferences and dietary needs.<br> <br>
+                Owners have control over the quality and freshness of ingredients.<br> <br>
+                Cons:<br> <br>
+                Requires more time and effort in meal preparation.<br> <br>
+                May not be suitable for busy pet owners with limited time for cooking.<br> <br>
+            </p>
+            <p style="font-weight: bold; font-size: 20px; margin-bottom: 10px; "> Commercial Dog-Food </p>
+            <p> Pros: <br> <br> 
+                Convenient and time-saving. <br> <br>
+                Typically formulated to meet the nutritional needs of dogs.<br> <br>
+                Provides consistent quality, as reputable brands follow strict standards.<br> <br>
+                Cons: <br> <br>
+                Some brands may contain fillers or artificial additives, also having higher cost. <br> <br>
+            </p>
+        </div>
+        <div class="content-item">
+            <h2>Choosing between Home and Commercial Food </h2>
+            <br>  
+        <p> The choice between home food and commercial depends on various factors: <br> <br>
+            Owner's Lifestyle: Consider the time and effort you can dedicate to preparing meals. <br> <br> <br> 
+            If you can invest the amount of time to be put in to create home food for your dog, that's great! <br> <br> <br> 
+            Ensure that your home-food diet for your dog is healthy and gives enough nutrition to your furry friend! <br> <br><br> 
+            If you cannot invest that much time, you can choose any commercial foods. Don't Worry! <br> <br> <br>
+            It is proven by many food tests and follows all the food protocols, and it is much easier for you to allow your dog to have a good diet as well! <br> <br>
+            Commercial Foods like Kibble and Pedigree have all the nutritional components required for your dog to grow well and live a long life! <br> <br>  </p>
+            <br> 
+            <br> 
+            <br> 
+        </p>
+        </div>
+        <div id="home-food" class="content-item">
+            <h2> If you chose Home-Food: </h2>
+            <p> Here is a Balanced Diet: <br> <br> 
+
+                Ensure that the home-cooked meals provide a balanced mix of proteins, carbohydrates, fats, vitamins, and minerals.<br> <br>
+                Consult with a veterinarian or canine nutritionist to create a well-rounded diet plan.<br> <br><br> <br>
+                2. Ingredient Quality:
+                
+                Use high-quality, fresh ingredients. Ensure meats are cooked to eliminate the risk of bacterial contamination.<br> <br>
+                Avoid foods that are toxic to dogs, such as onions, garlic, chocolate, and certain fruits.<br> <br><br> <br>
+                3. Portion Control:
+                
+                Measure portions carefully to avoid overfeeding or underfeeding.<br> <br>
+                Adjust portion sizes based on the dog's weight, age, and activity level.<br> <br>
+
+                4. Avoiding Human Food:
+                Comprehensive Dietary Management: While sharing certain human foods is acceptable, be cautious of items harmful to dogs, such as those containing artificial sweeteners like xylitol.  <br> <br> Regularly monitor your dog's weight, overall health, and stool consistency. <br> <br>  </p>
+        </div>
+        <div class="content-item">
+            <h2 id="commercial-food"> If you chose Commercial Dog-Food: </h2>
+            <br> 
+            <img src="commercial food.jpg"> 
+            <p> 1. Quality of the Brand: <br> <br>
+            Choose reputable brands known for producing high-quality and nutritionally balanced dog food.<br> <br>
+            (Pedigree, Benny’s bowl, Kibble) <br> <br>
+            Look for brands that meet the standards set by regulatory bodies for pet food.<br> <br><br> <br>
+            2. Portion Control:<br> <br>
+        
+        Follow the recommended portion sizes based on your dog's weight and activity level.<br> <br>
+        Avoid overfeeding, as this can lead to weight gain and associated health issues.<br> <br><br> <br>
+        3. Regular Monitoring:<br> <br>
+        
+        Monitor your dog's health, coat condition, and energy levels.<br> <br>
+        Adjust the feeding amount if you notice changes in weight or overall health.<br> <br><br> <br>
+        
+        4. Water Availability:<br> <br>
+        Always provide access to fresh water, especially important with dry kibble.<br> <br>
+        Adequate water intake is crucial for digestion and overall health.<br> <br><br> <br>
+        
+        5. Commercial Food at different life stages: <br> <br>
+        Puppy: Serve Food 4 times per day, every 4 hours.<br> <br>
+        The food should be mixed with steamed water before, as it is easier for your puppy to have the food since they still haven’t developed sharp enough teeth. <br> <br>
+        Adult: Service food twice a day, in the morning and in the night. <br> <br> <br>
+        In the afternoon, you can always be open to give them small treats or some treat to chew on as it is healthy for their teeth. Examples can be carrot or broccoli. <br> <br> <br> 
+    </p>
+        </div>
+        <div class="content-item">
+            <h2> Importance of Measuring Portion of Meals </h2>
+            <br> 
+            <img src="weighing food.jpeg"> 
+            <br> 
+            <p> Measuring portions of meals for dogs is crucial for maintaining their health and well-being. <br> <br>  <br> 
+                Accurate portion control ensures that dogs receive the right balance of  <br> <br>nutrients tailored to their individual needs,  <br> <br> preventing overeating and potential weight-related issues. <br> <br>  <br> 
+                It also helps in monitoring calorie intake, supporting weight  <br> <br> management and preventing obesity, a prevalent health concern in pets. <br> <br>  <br> 
+                Additionally, precise portioning is essential for dogs with specific  <br> <br> dietary requirements or medical conditions, ensuring they receive the appropriate nutrients without excess. <br> <br>  <br> 
+                Regularly measuring and adjusting portions based on factors such as  <br> <br> age, size, and activity level promotes a healthy weight,  <br> <br> supports optimal growth in puppies, and enhances overall longevity. <br> <br> <br>  
+                A consistent and well-monitored diet aids in preventing nutritional  <br> <br>deficiencies and related health issues, fostering a shiny  <br> <br> coat, strong bones, and improved immune function. <br> <br>  <br>  <br> <br>
+                Furthermore, portion control can be crucial in managing conditions such  <br> <br> as diabetes or allergies, where precise dietary management is vital. <br> <br>  <br> 
+                Ultimately, mindful portion control plays a pivotal role in safeguarding a  <br> <br> dog's nutritional balance and overall health. <br> <br>   <br> 
+            </p>  </p> 
+        </div>
+        <div class="content-item">
+            <h2> Steps to determine Portion of Meals </h2> 
+            <br> 
+            <img src="dog activity level.jpeg"> 
+            <br> 
+            <p> Check the Dog Food Packaging: <br> <br>
+        
+                Commercial dog food usually provides feeding guidelines based on the dog's weight. <br> <br>
+                Follow these recommendations as a starting point.<br> <br><br> <br>
+                Consider Your Dog's Weight:
+                
+                Weigh your dog regularly to monitor changes.<br> <br>
+                If your dog is healthy, you can use that weight as a reference.<br> <br><br> <br>
+                
+                Adjust for Activity Level:<br> <br>
+                Active dogs may require more calories than less active ones.<br> <br>
+                If your dog is highly active, you might need to feed a bit more.<br> <br><br> <br>
+                
+                Age and Life Stage:<br> <br>
+                
+                Puppies, adults, and seniors have different nutritional needs.<br> <br>
+                Follow guidelines for the appropriate life stage.<br> <br><br> <br>
+                Consider the Type of Food:<br> <br>
+                
+                High-quality commercial dog foods are formulated to meet specific nutritional standards. <br> <br>
+                You may not need additional supplements if you're feeding a balanced commercial diet.<br> <br><br> <br>
+                Divide Meals:<br> <br>
+                
+                Split the daily recommended amount into two or more meals. <br> <br>
+                This helps with digestion and prevents overeating. <br> <br><br> <br>
+                Monitor Weight Changes:<br> <br>
+                
+                Adjust the portion size if your dog is gaining or losing weight.<br> <br>
+                Gradually make changes to avoid digestive upset.<br> <br></p>
+        </div>
+    </div>
+</div><div id="diet" class="basic-storage">
+    <h1> Dietary Needs for Different Life Stages </h1> 
+    <div class="content-storage">
+        <div class="content-item">
+            <h2> Puppies </h2>
+            <p> Require higher protein and fat content for growth.<br> <br>
+                Feed smaller, frequent meals.<br> <br> 
+            </p> 
+        </div>
+        <div class="content-item">
+            <h2> Adults </h2>
+            <p> Require higher protein and fat content for growth.<br> <br>
+                Feed smaller, frequent meals.<br> <br>
+            </p>
+        </div>
+        <div class="content-item">
+            <h2> Seniors </h2>
+            <p> Lower calorie and fat content to prevent obesity.<br> <br>
+                Consider senior-specific dog food formulations.<br> <br>
+            </p>
+        </div>
+        <div class="content-item">
+            <h2> Variety of Proteins: </h2>
+            <br> 
+            <p> 
+                Beef (lean cuts)<br> <br>
+                Chicken (boneless, skinless)<br> <br>
+                Turkey (ground or cooked)<br> <br>
+                Eggs (cooked)<br> <br>
+                Fish (salmon, tuna)<br> <br>
+                Cottage cheese<br> <br>
+                Greek yogurt<br> <br>
+                Lentils<br> <br>
+                Chickpeas<br> <br>
+                Quinoa<br> <br>
+            </p>
+            <br> 
+        </div>
+        <div class="content-item">
+            <h2> Variety of Carbohydrates </h2>
+            <br> 
+            <p> 
+                Brown rice<br> <br>
+                Oats (rolled or steel-cut)<br> <br>
+                Sweet potatoes<br> <br>
+                Pumpkin<br> <br>
+                Barley<br> <br>
+                Lentils<br> <br>
+                Carrots<br> <br>
+                Spinach<br> <br>
+                Broccoli<br> <br>
+                Blueberries<br> <br>
+            </p>
+            <br> 
+        </div>
+        <div class="content-item">
+            <h2> Fats and Vitamins </h2>
+            <p> 
+                Salmon (rich in omega-3 fatty acids)<br> <br>
+                Sardines<br> <br>
+                Flaxseeds<br> <br>
+                Chia seeds<br> <br>
+                Sunflower seeds<br> <br>
+                Carrots (vitamin A)<br> <br>
+                Sweet potatoes (vitamin A) <br> <br>
+                Blueberries (vitamin C)<br> <br>
+                Spinach (vitamin K, iron)<br> <br>
+                Kale (vitamin K, calcium)<br> <br>
+                Liver (vitamin A, iron)<br> <br>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="diet-plan" class="basic-storage">
+    <h1> Example of a Diet Plan For Your Dog </h1>
+    <div class="content-storage">
+        <div class="content-item">
+            <h2> Meal One: Breakfast </h2> <br> <br> 
+            <p> <span style="font-weight: bold;"> Protein Source: </span> <br> <br>
+                Cooked chicken (boneless, skinless), boiled or grilled.<br> <br><br> <br>
+                <span style="font-weight: bold;"> Carbohydrate Source: </span> <br> <br>
+                Cooked brown rice.<br> <br>
+                Vegetables:<br> <br>
+                Steamed carrots.<br> <br> <br> 
+                <span style="font-weight: bold;"> Fats Source: </span> :<br> <br>
+                A small amount of olive oil.<br> <br>
+            </p>
+        </div> 
+        <div class="content-item">
+            <h2> Snacks </h2>
+            <br> <br> 
+            <p> You can always feed fruits to your dogs during the day <br> <br> as it keeps them full throughout the day even after their training <br> <br>  sessions and it is also beneficial for their immunity. </p> 
+           <br> 
+            <p> Examples of snacks during the day can be: </p>
+            <br> 
+            <p> 1. Apple </p> 
+            <br>  
+            <p> 2. Watermelon </p>
+            <br> 
+            <p> 3. Banana </p>
+            <br> 
+            <p> 4. Chicken Munchy Sticks </p>
+            <br> 
+            <p> 5. Dental treats</p>
+            <br>  
+        </div>
+        <div class="content-item">
+            <h2> Meal two: Dinner </h2> <br> <br> 
+            <p> 
+                <span style="font-weight: bold;"> Protein Source: </span> <br> <br>
+                Cooked fish (such as salmon or mackerel), baked or poached.<br> <br><br> <br>
+                <span style="font-weight: bold;"> Carbohydrate Source: </span> <br> <br>
+                Cooked sweet potatoes.<br> <br>
+                Vegetables:<br> <br>
+                Steamed peas.<br> <br><br> <br>
+                <span style="font-weight: bold;"> Fats Source: </span> :<br> <br>
+                A small amount of coconut oil.<br> 
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="basict-container">
+    <h1 id="nutrition"> Nutrition </h1>
+    <p align="center"> Importance: A balanced diet is crucial for a dog's overall health and well-being. <br> <br>
+        It ensures they receive the necessary nutrients to support their growth, energy levels, and immune system. <br> <br>
+        A well-fed dog is more likely to have a shiny coat, maintain a healthy weight, and experience fewer health issues.<br> <br>
+    </p>
+    <div class="content-container">
+        <h2 id="food"> Home-Food Vs. Commercial Dog-Food </h2>
+        <h3 style="font-weight: bold; font-size: 20px; margin-top: 20px; margin-bottom: 30px;"> Home-Food </h3>
+        <p> Pros: <br> <br>
+            Allows for customization based on the dog's preferences and dietary needs.<br> <br>
+            Owners have control over the quality and freshness of ingredients.<br> <br><br> <br>
+            Cons:<br> <br>
+            Requires more time and effort in meal preparation.<br> <br>
+            Ensuring a balanced diet may be challenging without proper knowledge.<br> <br>
+        </p>
+        <h3 style="font-weight: bold; font-size: 20px; margin-top: 20px; margin-bottom: 30px;"> Commercial Dog-Food </h3>
+        <p> Pros: <br> <br>
+            Convenient and time-saving. <br> <br>
+            Typically formulated to meet the nutritional needs of dogs.<br> <br><br> <br>
+            Cons: <br> <br>
+            Some brands may contain fillers or artificial additives. <br> <br>
+            Limited customization compared to home-cooked meals.<br> <br>
+        </p>
+    </div>
+
+    <div class="content-container">
+        <h2> Choosing between Home-Food and Commercial Food </h2>
+        <br> 
+        <img style="height: 600px;" src=""> 
+        <br> 
+        <p> The choice between home food and commercial depends on various factors: <br> <br>
+            Owner's Lifestyle: Consider the time and effort you can dedicate to preparing meals. <br> <br>
+            If you can invest the amount of time to be put in to create home food for your dog, that's great! <br> <br>
+            Ensure that your home-food diet for your dog is healthy and gives enough nutrition to your furry friend! <br> <br>
+            If you cannot invest that much time, you can choose any commercial foods. Don't Worry! <br> <br>
+            It is proven by many food tests and follows all the food protocols, and it is much easier for you to allow your dog to have a good diet as well! <br> <br>
+            Commercial Foods like Kibble and Pedigree have all the nutritional components required for your dog to grow well and live a long life! Whether it is home or commercial food, <br> <br> you should give your dog fruits, excluding avocado, grapes, and berries. <br> <br> 
+            Dog's Health Needs: Some dogs may have specific dietary requirements or allergies.<br> <br>
+            Consultation with Veterinarian: Seek advice from a vet to determine the best option for your dog's health.<br> <br><br> <br>
+        </p>
+    </div>
+    <div class="content-container">
+        <h2> If you chose Home-Food: </h2>
+        <br> 
+        <img src="images/homepage/home food.jpeg"> 
+        <br> 
+        <p> Here is a Balanced Diet: <br> <br> 
+
+            Ensure that the home-cooked meals provide a balanced mix of proteins, carbohydrates, fats, vitamins, and minerals.<br> <br>
+            Consult with a veterinarian or canine nutritionist to create a well-rounded diet plan.<br> <br><br> <br>
+            2. Ingredient Quality:
+            
+            Use high-quality, fresh ingredients. Ensure meats are cooked to eliminate the risk of bacterial contamination.<br> <br>
+            Avoid foods that are toxic to dogs, such as onions, garlic, chocolate, and certain fruits.<br> <br><br> <br>
+            3. Portion Control:
+            
+            Measure portions carefully to avoid overfeeding or underfeeding.<br> <br>
+            Adjust portion sizes based on the dog's weight, age, and activity level.<br> <br><br> <br>
+            4. Avoiding Human Food:
+            
+            While sharing certain human foods is acceptable, avoid foods that are harmful to dogs. For example, foods containing artificial sweeteners like xylitol can be toxic.<br> <br><br> <br>
+            5. Regular Monitoring:
+            
+            Monitor your dog's weight, overall health, and stool consistency.<br> <br>
+            Adjust the diet as needed based on any changes in health or weight.<br> <br><br> <br>
+            6. Consistency:
+            
+            Maintain a consistent feeding schedule to establish routine and regulate digestion.<br> <br><br> <br>
+            7. Veterinary Consultation:
+            Regularly consult with a veterinarian to ensure the homemade diet meets the dog's nutritional needs.<br> <br>
+            Consider blood tests to check for nutrient deficiencies.<br> <br>
+        </p>
+    </div>
+<div class="content-container">
+    <h2 id="commercial-food"> Commercial Dog-Food </h2>
+    <br> 
+    <img src="commercial food.jpg"> 
+    <p> 1. Quality of the Brand: <br> <br>
+
+        Choose reputable brands known for producing high-quality and nutritionally balanced dog food.<br> <br>
+         (Pedigree, Benny’s bowl, Kibble) <br> <br>
+        Look for brands that meet the standards set by regulatory bodies for pet food.<br> <br><br> <br>
+        2. Life Stage Formulation:<br> <br>
+        
+        Select a food formula appropriate for your dog's life stage (puppy, adult, senior).<br> <br>
+        Specialized formulations exist for dogs with specific health concerns or conditions.<br> <br><br> <br>
+        3. Read Labels:<br> <br>
+        
+        Read ingredient labels to understand the composition of the dog food.<br> <br>
+        Ensure the primary ingredients are high-quality proteins and avoid excessive fillers.<br> <br><br> <br>
+        4. Transition Period:<br> <br>
+        
+        When switching to a new brand or type of food, gradually introduce it to prevent digestive upset.<br> <br>
+        Mix the new food with the old one over several days.<br> <br><br> <br>
+        5. Portion Control:<br> <br>
+        
+        Follow the recommended portion sizes based on your dog's weight and activity level.<br> <br>
+        Avoid overfeeding, as this can lead to weight gain and associated health issues.<br> <br><br> <br>
+        6. Regular Monitoring:<br> <br>
+        
+        Monitor your dog's health, coat condition, and energy levels.<br> <br>
+        Adjust the feeding amount if you notice changes in weight or overall health.<br> <br><br> <br>
+        
+        7. Water Availability:<br> <br>
+        Always provide access to fresh water, especially important with dry kibble.<br> <br>
+        Adequate water intake is crucial for digestion and overall health.<br> <br><br> <br>
+        
+        8. Commercial Food at different life stages: <br> <br>
+        Puppy: Serve Food 4 times per day, every 4 hours.<br> <br>
+        The food should be mixed with steamed water before, as it is easier for your puppy to have the food since they still haven’t developed sharp enough teeth. <br> <br>
+        Adult: Service food twice a day, in the morning and in the night. <br> <br>
+        In the afternoon, you can always be open to give them small treats or some treat to chew on as it is healthy for their teeth. Examples can be carrot or broccoli. <br> <br>
+    </p>
+</div>
+
+<div class="content-container">
+    <h2> Steps to determine how much food to feed your dog </h2>
+    <br> 
+    <img src="weighing food.jpeg"> 
+    <br> 
+    <p> Check the Dog Food Packaging: <br> <br>
+
+        Commercial dog food usually provides feeding guidelines based on the dog's weight. <br> <br>
+        Follow these recommendations as a starting point.<br> <br><br> <br>
+        Consider Your Dog's Weight:
+        
+        Weigh your dog regularly to monitor changes.<br> <br>
+        If your dog is healthy, you can use that weight as a reference.<br> <br><br> <br>
+        
+        Adjust for Activity Level:<br> <br>
+        Active dogs may require more calories than less active ones.<br> <br>
+        If your dog is highly active, you might need to feed a bit more.<br> <br><br> <br>
+        Monitor Body Condition:<br> <br>
+        
+        Check your dog's body condition regularly.<br> <br>
+        You should be able to feel the ribs without them being overly visible or easily felt.<br> <br><br> <br>
+        Age and Life Stage:<br> <br>
+        
+        Puppies, adults, and seniors have different nutritional needs.<br> <br>
+        Follow guidelines for the appropriate life stage.<br> <br><br> <br>
+        Consider the Type of Food:<br> <br>
+        
+        High-quality commercial dog foods are formulated to meet specific nutritional standards. <br> <br>
+        You may not need additional supplements if you're feeding a balanced commercial diet.<br> <br><br> <br>
+        Divide Meals:<br> <br>
+        
+        Split the daily recommended amount into two or more meals. <br> <br>
+        This helps with digestion and prevents overeating. <br> <br><br> <br>
+        Monitor Weight Changes:<br> <br>
+        
+        Adjust the portion size if your dog is gaining or losing weight.<br> <br>
+        Gradually make changes to avoid digestive upset.<br> <br><br> <br>
+        Consult with Your Veterinarian:<br> <br>
+        
+        Your vet can provide specific guidance based on your dog's health, breed, and individual needs.<br> <br>
+        They may also recommend a specific diet based on health concerns or conditions.<br> <br>
+        These are general guidelines, and individual dogs may require more or less food depending on their metabolism and health.<br> <br>
+         It's crucial to monitor your dog's weight to serve them precise amount of food. <br> <br>
+         You should also monitor their body condition and energy levels to adjust as needed. <br> <br>
+         Regular veterinary check-ups can help ensure your dog's diet is appropriate for their overall health.<br> <br>
+    </p>
+</div>
+
+<div class="content-container">
+    <h2 id="dietry-needs"> Dietary Needs for Different Life Stages </h2>
+    <p> Puppies:<br> <br>
+Require higher protein and fat content for growth.<br> <br>
+Feed smaller, frequent meals.<br> <br><br> <br>
+
+Adults:<br> <br>
+Balanced diet to maintain optimal weight.<br> <br>
+Adjust portions based on activity level.<br> <br><br> <br>
+
+Seniors:<br> <br>
+Lower calorie and fat content to prevent obesity.<br> <br>
+Consider senior-specific dog food formulations.<br> <br><br> <br>
+
+Essential Nutrients: <br> <br><br> <br>
+<span style="font-weight: bold;"> Proteins: </span> <br> <br>
+Beef (lean cuts)<br> <br>
+Chicken (boneless, skinless)<br> <br>
+Turkey (ground or cooked)<br> <br>
+Eggs (cooked)<br> <br>
+Fish (salmon, tuna)<br> <br>
+Cottage cheese<br> <br>
+Greek yogurt<br> <br>
+Lentils<br> <br>
+Chickpeas<br> <br>
+Quinoa<br> <br><br> <br>
+<span style="font-weight: bold;"> Carbohydrates: </span> <br> <br>
+Brown rice<br> <br>
+Oats (rolled or steel-cut)<br> <br>
+Sweet potatoes<br> <br>
+Pumpkin<br> <br>
+Barley<br> <br>
+Lentils<br> <br>
+Carrots<br> <br>
+Spinach<br> <br>
+Broccoli<br> <br>
+Blueberries<br> <br>
+<span style="font-weight: bold;"> Fats: </span> <br> <br>
+Salmon (rich in omega-3 fatty acids)<br> <br>
+Sardines<br> <br>
+Flaxseeds<br> <br>
+Chia seeds<br> <br>
+Sunflower seeds<br> <br>
+Chicken fat (from cooked chicken)<br> <br>
+Coconut oil<br> <br>
+Olive oil<br> <br>
+Avocado<br> <br>
+Peanut butter (unsalted, no added sugar)<br> <br>
+<span style="font-weight: bold;">Vitamins and Minerals: </span> <br> <br>
+Carrots (vitamin A)<br> <br>
+Sweet potatoes (vitamin A) <br> <br>
+Blueberries (vitamin C)<br> <br>
+Oranges (vitamin C)<br> <br>
+Spinach (vitamin K, iron)<br> <br>
+Kale (vitamin K, calcium)<br> <br>
+Liver (vitamin A, iron)<br> <br>
+Pumpkin (beta-carotene)<br> <br>
+Apples (vitamin C)<br> <br>
+Broccoli (vitamin K, calcium)<br> <br>
+Note: It is not necessary that you feed all of these foods to your dog, you can choose a few that have different nutritional values, and feed those to your dog. <br> <br>
+</p> 
+</div>
+<div class="content-container">
+    <h2> An example of a healthy Diet Plan for your Dog </h2>
+    <p> (Note: If you feed commercial food to your dog you only need to maintain the portion of your dog’s meal based on their difference between the ideal weight for your dog’s breed and age, and their current weight as well as their activity level) <br> <br>
+        <span style="font-weight:bold;"> Meal 1: Breakfast </span> <br> <br><br> <br>
+Protein Source:<br> <br>
+Cooked chicken (boneless, skinless), boiled or grilled.<br> <br><br> <br>
+Carbohydrate Source:<br> <br>
+Cooked brown rice.<br> <br>
+Vegetables:<br> <br>
+Steamed carrots.<br> <br><br> <br>
+Fats:<br> <br>
+A small amount of olive oil.<br> <br><br> <br>
+<span style="font-weight: bold;"> Meal 2: Dinner </span> <br> <br><br> <br>
+Protein Source:<br> <br>
+Cooked fish (such as salmon or mackerel), baked or poached.<br> <br><br> <br>
+Carbohydrate Source:<br> <br>
+Cooked sweet potatoes.<br> <br>
+Vegetables:<br> <br>
+Steamed peas.<br> <br><br> <br>
+Fats:<br> <br>
+A small amount of coconut oil.<br> <br>
+</p>
+<p> 
+<span style="font-weight: bold; text-transform: uppercase;"> Important: </span><br> <br>
+General Tips for your dog's diet and nutrition: <br> <br>
+Portion Control:<br> <br>
+
+Adjust portion sizes based on your dog's weight, age, and activity level.<br> <br>
+Monitor weight regularly and adjust as needed.<br> <br><br> <br>
+Supplements:<br> <br>
+
+Consult with your veterinarian about the need for any additional supplements, such as calcium or specific vitamins.<br> <br><br> <br>
+Hydration:<br> <br>
+
+Always provide access to fresh water throughout the day.<br> <br><br> <br>
+Variety:<br> <br>
+
+Rotate protein sources and vegetables periodically to provide a variety of nutrients.<br> <br>
+
+Avoid ingredients that are toxic to dogs, such as onions, garlic, and certain spices.<br> <br>
+Remember to introduce any new diet gradually, especially if transitioning from commercial dog food. Monitor your dog's health, including their weight, coat condition, and overall well-being. <br> <br>
+Regular veterinary check-ups will help ensure your dog's diet meets their individual needs. <br> <br>
+Adjust the diet plan based on your veterinarian's recommendations and your dog's specific requirements.
+</p>
+</div>
+</div>
+
+<footer>
+    <div class="footer-section footer-logo">
+      <img style="width: 250px; height: 250px;" src="Favicon.png" alt="Website Logo"> 
+      <div>
+        <div class="wnfooter"> 
+        <p style="text-align: center; font-weight: bold; font-size: 40px;">DOGOPEDIA</p>
+      </div>
+        <ul class="footer-rights">
+          <li style="font-size: 18px; font-weight: 500;  text-align: center">&copy; 2023  DOGOPEDIA. <br> <br>  All Rights Reserved. </li>
+        </ul>
+        
+      </div>
+    </div>
+  
+    <div class="footer-space">
+      <h4> Home </h4>
+      <ul class="footer-links">
+        <li><a href="#welcome"> Welcome </a> </li>
+        <br>
+        <li><a href="#importance"> Importance of Dog Training </a></li>
+        <br> 
+        <li><a href="#explore"> Explore More </a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-space">
+      <h4> Dog Care </h4>
+      <ul class="footer-links"> 
+        <li><a href="training.html"> Dog Training </li>
+        <li><a href="hygiene.html"> Maintaining Hygiene </a></li>
+        <li><a href="nutrition.html"> Nutrition </a> </li>
+        <li><a href="vet.html#vaccination"> Vaccination </li>
+      </ul>
+    </div>
+    <div class="footer-space">
+      <h4 style="color:#fff;">Other </h4>
+      <ul class="footer-links">
+        <li><a href="training.html">Dog Care</a></li>
+        <li><a href="feedback.html">Feedback </a></li>
+        <li><a href="feedback.html">Training</a></li>
+        <li><a href="contact.html"> Contact Us </li>
+      </ul>
+    </div>
+    <!-- Responsive Footer -->
+    <div class="rfooter">
+      <h4 style="color:#fff;"> Feedback  </h4><br>
+      <div class="footer-links">
+       <a href="#feedback"> Feedback Form  </a>  <br><br>
+       <a href="#reviews"> Previous Reviews </a>  <br><br>
+      </div>
+      <br>
+      <h4> Dog Care </h4><br>
+      <div class="footer-links">
+       <a href="training.html"> Dog Training </a> <br><br>
+       <a href="hygiene.html"> Maintaining Hygiene</a><br><br>
+       <a href="nutrition.html"> Nutrition </a> <br>  <br>
+       <a href="vet.html#vaccination"> Vaccination </a> <br> <br>
+      </div>
+      <br>
+      <h4> Other </h4> <br>
+      <div class="footer-links">
+       <a href="hygiene.html"> Dog Care</a>  <br><br>
+       <a href="feedback.html"> Feedback </a>  <br><br>
+       <a href="training.html"> Training </a>  <br><br>
+       <a href="contact.html"> Contact Us </a>  <br><br>
+    </div>
+  </footer>
+  

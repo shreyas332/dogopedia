@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOGOPEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans&family=Noto+Sans+Kawi:wght@500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oMMotKWithHi/t+s+/h2rZGJT1vYQ6JKcKFYfIUdLlD/bXHqjCZM0J/VVdPWdGqFbNiEtBdZmfFZnYnEUX99nwMs3a2LzBxKMXqfNnZXZLlLZ+WJrHWJWr">
+  
+</head>
+
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"> <a style="text-decoration: none; color: #fff" href="index.html"> DOGOPEDIA </a> </label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Training</button>
+        <div class="dropdown-content">
+            <a href="training.html"> Commands</a>
+            <a href="hygiene.html">Hygiene </a>
+            <a href="nutrition.html">Nutrition </a>
+            <a href="vet.html">Health </a>
+        </div>
+      </div>
+      </li>
+      <li><a href="feedback.html">Feedback </a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li>
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="           Dog-related issues?">
+          <button style="border: none; border-radius: 10px;" id="search-button" type="submit">
+            <i class="fas fa-search"></i>
+        </div>
+      </li>
+    </ul>
+    <div id="suggestions-container"></div>
+  </nav>
+  <div class="contact-container">
+    <h1  id="feedback" style="color: #4169e1;"> Help Us Level Up. <br> With Your Feedback!</h1> 
+    <div class="contact-left"> 
+        <br> 
+        <form target="" action="https://formspree.io/f/xoqogvga" method="POST"> 
+            <div class="input-row">
+                <div class="input-group">
+                    <label> Name </label>  <br> <br> 
+                    <input name="Name" type="text" placeholder="Enter Your Name..." required> 
+                </div>
+            </div>
+            <div class="input-row">
+            </div>
+            <label> Message </label> <br> <br> 
+            <textarea name="Message" rows="5" placeholder="Your Message" required> </textarea>
+            <div class="form-button">
+              <br> 
+            <button type="submit"> <a href="thankyou.html"> Send  </a> </button>
+            </div>
+        </form>  
+    </div>
+</div>
+<footer>
+  <div class="footer-section footer-logo">
+    <img style="width: 250px; height: 250px;" src="Favicon.png" alt="Website Logo"> 
+    <div>
+      <div class="wnfooter"> 
+      <p style="text-align: center; font-weight: bold; font-size: 40px;">DOGOPEDIA</p>
+    </div>
+      <ul class="footer-rights">
+        <li style="font-size: 18px; font-weight: 500;  text-align: center">&copy; 2023  DOGOPEDIA. <br> <br>  All Rights Reserved. </li>
+      </ul>
+      
+    </div>
+  </div>
+
+  <div class="footer-space">
+    <h4> Feedback </h4>
+    <ul class="footer-links">
+      <li><a href="#feedback"> Feedback Form </a></li>
+      <br> 
+      <li><a href="#reviews"> Previous Reviews </a></li>
+    </ul>
+  </div>
+
+  <div class="footer-space">
+    <h4> Dog Care </h4>
+    <ul class="footer-links"> 
+      <li><a href="training.html"> Dog Training </li>
+      <li><a href="hygiene.html"> Maintaining Hygiene </a></li>
+      <li><a href="nutrition.html"> Nutrition </a> </li>
+      <li><a href="vet.html#vaccination"> Vaccination </li>
+    </ul>
+  </div>
+  <div class="footer-space">
+    <h4 style="color:#fff;">Other </h4>
+    <ul class="footer-links">
+      <li><a href="training.html">Dog Care</a></li>
+      <li><a href="feedback.html">Feedback </a></li>
+      <li><a href="feedback.html">Training</a></li>
+      <li><a href="contact.html"> Contact Us </li>
+    </ul>
+  </div>
+  <!-- Responsive Footer -->
+  <div class="rfooter">
+    <h4 style="color:#fff;"> Feedback  </h4><br>
+    <div class="footer-links">
+     <a href="#feedback"> Feedback Form  </a>  <br><br>
+     <a href="#reviews"> Previous Reviews </a>  <br><br>
+    </div>
+    <br>
+    <h4> Dog Care </h4><br>
+    <div class="footer-links">
+     <a href="training.html"> Dog Training </a> <br><br>
+     <a href="hygiene.html"> Maintaining Hygiene</a><br><br>
+     <a href="nutrition.html"> Nutrition </a> <br>  <br>
+     <a href="vet.html#vaccination"> Vaccination </a> <br> <br>
+    </div>
+    <br>
+    <h4> Other </h4> <br>
+    <div class="footer-links">
+     <a href="hygiene.html"> Dog Care</a>  <br><br>
+     <a href="feedback.html"> Feedback </a>  <br><br>
+     <a href="training.html"> Training </a>  <br><br>
+     <a href="contact.html"> Contact Us </a>  <br><br>
+  </div>
+</footer>
+</body>
+</html>

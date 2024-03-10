@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOGOPEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans&family=Noto+Sans+Kawi:wght@500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oMMotKWithHi/t+s+/h2rZGJT1vYQ6JKcKFYfIUdLlD/bXHqjCZM0J/VVdPWdGqFbNiEtBdZmfFZnYnEUX99nwMs3a2LzBxKMXqfNnZXZLlLZ+WJrHWJWr">
+</head>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DOGOPEDIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add the font links here -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans&family=Noto+Sans+Kawi:wght@500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oMMotKWithHi/t+s+/h2rZGJT1vYQ6JKcKFYfIUdLlD/bXHqjCZM0J/VVdPWdGqFbNiEtBdZmfFZnYnEUX99nwMs3a2LzBxKMXqfNnZXZLlLZ+WJrHWJWr">
+  
+</head>
+
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"> <a style="text-decoration: none; color: #fff" href="index.html"> DOGOPEDIA </a> </label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Training</button>
+        <div class="dropdown-content">
+            <a href="training.html"> Commands</a>
+            <a href="hygiene.html">Hygiene </a>
+            <a href="nutrition.html">Nutrition </a>
+            <a href="vet.html">Health </a>
+        </div>
+      </div>
+      </li>
+      <li><a href="feedback.html">Feedback </a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li>
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="           Dog-related issues?">
+          <button style="border: none; border-radius: 10px;" id="search-button" type="submit">
+            <i class="fas fa-search"></i>
+        </div>
+      </li>
+    </ul>
+    <div id="suggestions-container"></div>
+  </nav>
+<br> 
+<br> 
+<div id="hygiene" class="basic-storage">
+    <h1> Hygiene </h1>
+    <div class="content-storage">
+        <div id="grooming" class="content-item">
+            <h2> Grooming Routines </h2>
+            <br> 
+            <img src="grooming.jpeg"> 
+            <br> 
+            <h3> Importance</h3> <br> 
+    <p> Regular grooming and hygiene practices are vital for maintaining a dog's overall health and well-being. <br> <br>
+        Grooming goes beyond aesthetic appeal; it plays a crucial role in preventing health issues. <br> <br> <br> 
+        Brushing your dog's coat removes loose fur and prevents matting, promoting healthy skin and a shiny coat. <br> <br> <br> 
+        Regular nail trims prevent discomfort and potential injury. <br> <br> <br> 
+        Dental care, such as brushing your dog's teeth, helps prevent periodontal disease, contributing to better overall health. <br> <br>  <br> 
+        Hygiene practices, including ear cleaning and proper bathing, reduce the risk of infections and maintain a clean, pleasant-smelling pet. <br> <br>
+        Grooming sessions also provide an opportunity to check for abnormalities like lumps, ticks, or skin conditions.<br> <br>  <br> 
+        Beyond physical health, grooming fosters a positive bond between you and your dog, ensuring a happy and comfortable companion throughout their life.
+    </p>
+        </div> 
+        <div id="bathing" class="content-item">
+            <h2> Bathing </h2>
+            <br> 
+            <img src="bathing.jpeg"> 
+            <br> 
+            <p> Labrador Retriever:<br> <br>
+            Frequency: Every 2-3 months or as needed.<br> <br>
+            Note: Labs have a water-resistant double coat, so frequent bathing is unnecessary.<br> <br>
+            Golden Retriever:<br> <br>
+            Frequency: Every 2-3 weeks.<br> <br>
+            Note: Similar to Labs, Golden Retrievers have water-resistant coats, and excessive bathing can strip natural oils.<br> <br>
+            German Shepherd:<br> <br>
+            Frequency: Every 2-3 weeks<br> <br>
+            Note: German Shepherds have a double coat that sheds, and excessive bathing may disrupt the coat's natural oils.<br> <br>
+            Shih Tzu:<br> <br>
+            Frequency: Every 3-4 weeks<br> <br>
+            Note: Regular grooming, including brushing, is essential. Shih Tzus are prone to matting.<br> <br>
+            </p>   
+            <p> 
+            <span style="font-weight: bold;"> Note: </span> It is advisable to also clean the ears of your dog using the solution tissue and be careful not to go too dep as it can hurt their eardrum. 
+        </div>
+        <div id="shampoo" class="content-item"> 
+            <h2 id="nail-trimming"> Shampoo and Nail Trimming </h2>
+            <br> 
+            <img src="nails.jpeg"> 
+            <br> 
+            <p> Use a dog-specific shampoo to avoid skin irritation. </p> <br> <br>
+            <p> Technique: Wet thoroughly, apply shampoo, and rinse well. Be cautious with ears and eyes. Towel dry or use a dog hairdryer on low heat. <br> <br>
+        
+                Dogs with skin conditions may require more frequent bathing as per vet recommendations. <br> <br>
+                Use specific shampoos according to your dog's breed type, and don't change the type shampoo you already use for your dog, <br> <br> in order to maintain the coat's natural oils or else your dog might react to it as an allergy. <br> <br> 
+                Regular brushing between baths helps maintain coat health and reduces matting.
+            </p>
+            <br> <br>   
+            <p> 
+                Frequency: Every 3-4 weeks. <br> <br>
+                Tools: Use a dog nail clipper. <br> <br>
+                Technique: Trim a small amount at a time, avoiding the quick (the pink part). <br> <br> 
+                If uncertain, seek guidance from a vet, groomer or a dog behaviourist.<br> <br>
+            <br> 
+            </p>
+        </div>
+    </div>
+</div>
+<div id="skin" class="basic-storage">
+    <h1> Common Skin Conditions </h1>
+    <div class="content-storage">
+        <div class="content-item">
+            <h2> Hot Spots (Acute Most Dermatitis) </h2>
+            <img src="hot spots.png">  
+            <br> 
+            <h3> Recognition: </h3>  <br> 
+            <p> Hot spots, or acute moist dermatitis, manifest as rapidly developing red, moist, and irritated skin in dogs. <br><br>These inflamed areas are often warm to the touch. <br> <br>Alongside visible symptoms, dogs may exhibit signs of discomfort, showcasing excessive licking or scratching as they attempt to alleviate the itching or pain associated with the hot spot. <br><br>Monitoring for these behaviors is crucial for early detection and intervention.<br><br><br><br> </p> <br> <br>
+            <h3> Treatment: </h3>  <br> 
+            <p> In addressing hot spots, it is imperative to trim the hair around the affected area, enabling better airflow and facilitating the healing process. <br><br>Thorough cleaning with a vet-recommended solution removes debris and irritants, while the application of prescribed ointments, such as topical antibiotics or anti-inflammatories, aids in reducing inflammation and promoting healing. <br><br>To prevent further irritation, the use of an Elizabethan collar is recommended, effectively hindering the dog's ability to lick or scratch the affected area and allowing for undisturbed recovery.<br><br><br><br> <br> <br>
+            </p>
+        </div>
+        <div class="content-item"> 
+            <h2> Dry Skin </h2>
+            <br> 
+            <img src="dry skin.webp">
+            <br> 
+            <h3> Recognition: </h3>  <br> 
+            <p>  Flakiness, dull coat, increased itching, and the appearance of white, fine dandruff particles on the fur.<br><br>Dry skin in dogs can manifest as flakiness and a lackluster coat. <br><br>An observable increase in itching may lead to discomfort and restlessness. <br><br>Additionally, fine white dandruff particles on the fur may be evident, indicating the skin's lack of moisture and natural oils.<br><br><br><br> </p> 
+            <h3> Treatment: </h3> <br> 
+            <p> Use a moisturizing dog shampoo, add omega-3 fatty acids to their diet, and ensure proper hydration. Consult a vet for severe cases.<br><br>
+            Addressing dry skin involves selecting a moisturizing dog shampoo to nourish the skin and coat. Supplementing the dog's diet with omega-3 fatty acids, found in fish oil, can enhance skin health from within. <br><br>
+            Adequate hydration is crucial, so ensure your dog has access to fresh water. <br><br>
+            In severe cases or persistent symptoms, consulting a veterinarian is essential for a comprehensive evaluation and tailored treatment plan.<br><br>
+            Additionally, regular brushing not only helps distribute natural oils but also promotes blood circulation, supporting a healthier skin and coat. <br> <br> 
+            Consistency in the application of these measures is key for long-term relief and improved skin condition in dogs. <br> <br> </p>
+        </div>
+        <div class="content-item">
+            <h2> Allergies </h2>
+            <br> 
+<img src="allergy.png">
+<br> 
+<h3> Recognition </h3> <br> <br>
+<p> Itchy skin, redness, inflammation, and ear infections can indeed be symptoms of allergies, particularly allergic reactions that affect the skin and ears. <br> <br> 
+    Allergies occur when the immune system overreacts to a substance that is usually harmless, known as an allergen. <br> <br> 
+    Common allergens include pollen, pet dander, certain foods, insect stings, and certain medications. <br> <br> 
+    Persistent Scratching: Constant scratching, particularly in specific areas, can also be a sign of allergies. <br> 
+    If your dog consistently scratches or chews at certain body parts, it may indicate an allergic reaction. </p> <br> <br> 
+<h3> Treatment: </h3> <br> 
+<p>  Identify and eliminate allergens if possible. <br> <br> 
+    Use hypoallergenic shampoos, administer prescribed antihistamines, and consult a vet for long-term management <br> <br>
+    Dietary Management: Explore hypoallergenic or limited-ingredient diets to identify and eliminate potential food allergens. Your veterinarian can guide you in selecting an appropriate diet tailored to your dog's specific needs. <br> <br> 
+    Allergen-Free Environment: Minimize exposure to environmental allergens by creating an allergen-free zone in your home. Regularly clean and vacuum living spaces, use air purifiers, and wash your dog's bedding to reduce allergen levels. <br> <br>  </p>    
+        </div>
+</div>
+</div>
+<div class="basict-container">
+    <h1 id="hygiene"> Hygiene </h1>
+    <div class="content-container">
+    <h2 id="grooming"> Grooming Routines </h2>
+    <br> 
+    <img src="grooming.jpeg"> 
+    <br> 
+    <h3> Importance</h3>
+    <p> Regular grooming and hygiene practices are vital for maintaining a dog's overall health and well-being. <br> <br>
+        Grooming goes beyond aesthetic appeal; it plays a crucial role in preventing health issues. <br> <br> 
+        Brushing your dog's coat removes loose fur and prevents matting, promoting healthy skin and a shiny coat. <br> <br>
+        Regular nail trims prevent discomfort and potential injury. <br> <br>
+        Dental care, such as brushing your dog's teeth, helps prevent periodontal disease, contributing to better overall health. <br> <br> Hygiene practices, including ear cleaning and proper bathing, reduce the risk of infections and maintain a clean, pleasant-smelling pet. <br> <br>
+        Grooming sessions also provide an opportunity to check for abnormalities like lumps, ticks, or skin conditions.<br> <br> Beyond physical health, grooming fosters a positive bond between you and your dog, ensuring a happy and comfortable companion throughout their life.
+    </p>
+</div>
+<div class="content-container">
+    <h2 id="brushing"> Brushing </h2>
+    <br> 
+    <img src="brushing.avif"> 
+    <br> 
+    <p> Frequency: Regular brushing, at least 3-4 times a week, if your dog is a heavy shedding breed, then at least once per day. <br> <br>
+        Tools: Use a suitable brush for your dog's coat type.<br> <br>
+        Method: Brush in the direction of hair growth to remove loose fur and prevent matting. Pay attention to areas prone to tangles, like behind the ears or in the tail<br> <br>
+    </p>
+</div>
+
+<div class="content-container">
+    <h2 id="bathing"> Bathing </h2>
+    <br> 
+    <img src="bathing.jpeg"> 
+    <br> 
+    <p> Labrador Retriever:<br> <br>
+    Frequency: Every 2-3 months or as needed.<br> <br>
+    Note: Labs have a water-resistant double coat, so frequent bathing is unnecessary.<br> <br><br> <br>
+    Golden Retriever:<br> <br>
+    Frequency: Every 2-3 weeks.<br> <br>
+    Note: Similar to Labs, Golden Retrievers have water-resistant coats, and excessive bathing can strip natural oils.<br> <br><br> <br>
+    Poodle:<br> <br>
+    Frequency: Every 4-6 weeks<br> <br>
+    Note: Regular grooming is crucial, including haircuts. Poodles have hair, not fur, and are prone to matting.<br> <br><br> <br>
+    German Shepherd:<br> <br>
+    Frequency: Every 2-3 weeks<br> <br>
+    Note: German Shepherds have a double coat that sheds, and excessive bathing may disrupt the coat's natural oils.<br> <br><br> <br>
+    Chihuahua:<br> <br>
+    Frequency: Every 2-3 months or as needed.<br> <br>
+    Note: Chihuahuas often have short coats that require less frequent bathing.<br> <br><br> <br>
+    Shih Tzu:<br> <br>
+    Frequency: Every 3-4 weeks<br> <br>
+    Note: Regular grooming, including brushing, is essential. Shih Tzus are prone to matting.<br> <br><br> <br>
+    Bulldog:<br> <br>
+    Frequency: Every 6-8 weeks or as needed.<br> <br>
+    Note: Bulldogs have sensitive skin, and over-bathing can lead to dryness.<br> <br>
+    </p>
+</div>
+
+<div class="content-container">
+    <h2 id="shampoo"> Shampoo </h2>
+    <br> 
+    <img src="shampoo.jpg"> 
+    <br> 
+    <p> Use a dog-specific shampoo to avoid skin irritation. </p> <br> <br>
+    <p> Technique: Wet thoroughly, apply shampoo, and rinse well. Be cautious with ears and eyes. Towel dry or use a dog hairdryer on low heat. <br> <br>
+
+        Dogs with skin conditions may require more frequent bathing as per vet recommendations. <br> <br>
+        Use specific shampoos according to your dog's breed type, and don't change the type shampoo you already use for your dog, in order to maintain the coat's natural oils or else your dog might react to it as an allergy. <br> <br> 
+        Regular brushing between baths helps maintain coat health and reduces matting.
+    </p>
+</div>
+
+<div class="content-container">
+    <h2 id="nails"> Nail Trimming </h2>
+    <br> 
+    <img src="nails.jpeg"> 
+    <br> 
+    <p> 
+        Frequency: Every 3-4 weeks. <br> <br>
+        Tools: Use a dog nail clipper. <br> <br>
+        Technique: Trim a small amount at a time, avoiding the quick (the pink part). <br> <br> 
+        If uncertain, seek guidance from a vet, groomer or a dog behaviourist.<br> <br>
+    </p>
+</div>
+
+<div class="content-container">
+    <h2 id="dental-care"> Dental Care </h2>
+    <br> 
+    <img src="kms"> 
+    <br> 
+    <p> 
+        Frequency: Daily or at least 3-4 times a week. <br> <br>
+        Tools: Use a dog toothbrush and toothpaste. <br> <br>
+        Technique: Gently brush your dog's teeth, focusing on the back molars. Gradually introduce dental care to make it a positive experience.<br> <br>
+        Note: Instead of toothbrush, on some days you can also give your dog a dental treat that helps them clean their teeth while they are chewing it.<br> <br>
+    </p>
+</div>
+
+<div class="content-container">
+    <h2 id="ear-cleaning"> Ear Cleaning </h2>
+    <br> 
+    <img src="ear.jpeg"> 
+    <br> 
+    <p> Frequency: Once per 2 weeks. <br> <br>
+        Tools: Use a dog ear cleaning solution and cotton balls.<br> <br>
+        Technique: Dampen a cotton ball with the solution and gently clean visible parts of the ear. <br> <br>  Avoid inserting anything into the ear canal as it might trigger the dog or cause harm to their ears.<br> <br>
+    </p>
+</div>
+</div>
+
+<div class="basict-container">
+    <h1 id="skin"> Common Skin Conditions </h1>
+    <div class="content-container">
+        <h2> Hot Spots (Acute Most Dermatitis) </h2>
+        <br> 
+        <img src="hot spots.png">  
+        <br> 
+        <h3> Recognition: </h3> 
+        <p> Hot spots, or acute moist dermatitis, manifest as rapidly developing red, moist, and irritated skin in dogs. <br><br>These inflamed areas are often warm to the touch. <br> <br>Alongside visible symptoms, dogs may exhibit signs of discomfort, showcasing excessive licking or scratching as they attempt to alleviate the itching or pain associated with the hot spot. <br><br>Monitoring for these behaviors is crucial for early detection and intervention.<br><br><br><br> </p> <br> <br>
+        <h3> Treatment: </h3> 
+        <p> In addressing hot spots, it is imperative to trim the hair around the affected area, enabling better airflow and facilitating the healing process. <br><br>Thorough cleaning with a vet-recommended solution removes debris and irritants, while the application of prescribed ointments, such as topical antibiotics or anti-inflammatories, aids in reducing inflammation and promoting healing. <br><br>To prevent further irritation, the use of an Elizabethan collar is recommended, effectively hindering the dog's ability to lick or scratch the affected area and allowing for undisturbed recovery.<br><br><br><br> <br> <br>
+        </p>
+    </div>
+<div class="content-container">
+    <h1 id="dry-skin"> Dry Skin </h1>
+    <br> 
+    <img src="dry skin.webp">
+    <br> 
+    <h3> Recognition: </h3> 
+    <p>  Flakiness, dull coat, increased itching, and the appearance of white, fine dandruff particles on the fur.<br><br>Dry skin in dogs can manifest as flakiness and a lackluster coat. <br><br>An observable increase in itching may lead to discomfort and restlessness. <br><br>Additionally, fine white dandruff particles on the fur may be evident, indicating the skin's lack of moisture and natural oils.<br><br><br><br> </p> 
+        <h3> Treatment: </h3> <p> Use a moisturizing dog shampoo, add omega-3 fatty acids to their diet, and ensure proper hydration. Consult a vet for severe cases.<br><br>
+            Addressing dry skin involves selecting a moisturizing dog shampoo to nourish the skin and coat. Supplementing the dog's diet with omega-3 fatty acids, found in fish oil, can enhance skin health from within. 
+            <br><br>Adequate hydration is crucial, so ensure your dog has access to fresh water. <br><br>In severe cases or persistent symptoms, consulting a veterinarian is essential for a comprehensive evaluation and tailored treatment plan.<br><br><br><br> </p>
+            
+            
+            
+            
+             </p> <br> <br>
+</div>
+
+<div class="content-container">
+<h2> Allergies </h2>
+<br> 
+<img src="allergy.png">
+<br> 
+<h3> Recognition </h3> <br> <br>
+<p> Itchy skin, redness, inflammation, and ear infections can indeed be symptoms of allergies, particularly allergic reactions that affect the skin and ears. <br> <br> 
+    Allergies occur when the immune system overreacts to a substance that is usually harmless, known as an allergen. <br> <br> 
+    Common allergens include pollen, pet dander, certain foods, insect stings, and certain medications. </p><br> <br> <br> <br>
+<h3> Treatment: </h3> <br> <br>
+<p>  Identify and eliminate allergens if possible. <br> <br> 
+    Use hypoallergenic shampoos, administer prescribed antihistamines, and consult a vet for long-term management </p><br> <br><br> <br>
+</div>
+</div>
+</div>
+<footer>
+  <div class="footer-section footer-logo">
+    <img style="width: 250px; height: 250px;" src="Favicon.png" alt="Website Logo"> 
+    <div>
+      <div class="wnfooter"> 
+      <p style="text-align: center; font-weight: bold; font-size: 40px;">DOGOPEDIA</p>
+    </div>
+      <ul class="footer-rights">
+        <li style="font-size: 18px; font-weight: 500;  text-align: center">&copy; 2023  DOGOPEDIA. <br> <br>  All Rights Reserved. </li>
+      </ul>
+      
+    </div>
+  </div>
+
+  <div class="footer-space">
+    <h4> Hygiene </h4>
+    <ul class="footer-links">
+      <li><a href="#bathing"> Bathing </a></li>
+      <br> 
+      <li><a href="#skin">Skin Conditions</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-space">
+    <h4> Dog Care </h4>
+    <ul class="footer-links"> 
+      <li><a href="training.html"> Dog Training </li>
+      <li><a href="hygiene.html"> Maintaining Hygiene </a></li>
+      <li><a href="nutrition.html"> Nutrition </a> </li>
+      <li><a href="vet.html#vaccination"> Vaccination </li>
+    </ul>
+  </div>
+  <div class="footer-space">
+    <h4 style="color:#fff;">Other </h4>
+    <ul class="footer-links">
+      <li><a href="training.html">Dog Care</a></li>
+      <li><a href="feedback.html">Feedback </a></li>
+      <li><a href="feedback.html">Training</a></li>
+      <li><a href="contact.html"> Contact Us </li>
+    </ul>
+  </div>
+  <!-- Responsive Footer -->
+  <div class="rfooter">
+    <h4 style="color:#fff;"> Hygiene </h4><br>
+    <div class="footer-links">
+     <a href="#bathing"> Bathing  </a>  <br><br>
+     <a href="#skin"> Skin Conditions </a>  <br><br>
+    </div>
+    <br>
+    <h4> Dog Care </h4><br>
+    <div class="footer-links">
+     <a href="training.html"> Dog Training </a> <br><br>
+     <a href="hygiene.html"> Maintaining Hygiene</a><br><br>
+     <a href="nutrition.html"> Nutrition </a> <br>  <br>
+     <a href="vet.html#vaccination"> Vaccination </a> <br> <br>
+    </div>
+    <br>
+    <h4> Other </h4> <br>
+    <div class="footer-links">
+     <a href="hygiene.html"> Dog Care</a>  <br><br>
+     <a href="feedback.html"> Feedback </a>  <br><br>
+     <a href="training.html"> Training </a>  <br><br>
+     <a href="contact.html"> Contact Us </a>  <br><br>
+  </div>
+</footer>
+</body>
+</html>
+
